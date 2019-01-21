@@ -1,0 +1,24 @@
+div.container-main{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: orange;
+
+	div.c-menu-left{
+		position: absolute;
+		width: 300px;
+		height: 100%;
+		top: 0;
+		left: 0;
+		background-color: purple;
+	}
+
+	div.c-main{
+		position: absolute;
+		width: calc(100% - 300px);
+		height: 100%;
+		top: 0;
+		right: 0;
+		background-color: pink;
+	}
+}
