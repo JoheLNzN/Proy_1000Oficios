@@ -220,8 +220,7 @@ div.c-col2 {
         transition: all .3s ease; }
         @media all and (max-width: 500px) {
           div.c-col2 div.form-container div.c-input div.c-link a.link-fp {
-            position: relative;
-            margin-bottom: 12px;
+            top: 2px;
             font-size: 11px; } }
         div.c-col2 div.form-container div.c-input div.c-link a.link-fp:hover {
           text-decoration: underline; }

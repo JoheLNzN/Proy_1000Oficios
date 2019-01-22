@@ -252,8 +252,7 @@ div.c-col2{
 	  				transition: all .3s ease;
 
 	  				@media all and (max-width: 500px){
-	  					position: relative;
-	  					margin-bottom: 12px;
+	  					top: 2px;
 	  					font-size: 11px;
 	  				}
 
