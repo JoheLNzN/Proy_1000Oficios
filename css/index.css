@@ -11,7 +11,7 @@ div.container-index {
   height: 100%;
   overflow: hidden;
   background-color: #1944A0;
-  background-image: url(../images/index/pattern.png); }
+  background-image: url(../images/common/pattern.png); }
   @media all and (max-width: 550px) {
     div.container-index {
       background-size: 170px; } }
@@ -63,7 +63,10 @@ div.c-col2 {
   justify-content: center; }
   @media all and (max-width: 880px) {
     div.c-col2 {
-      width: 100%; } }
+      width: 100%;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; } }
   div.c-col2::before {
     content: '';
     position: absolute;
@@ -95,15 +98,24 @@ div.c-col2 {
     padding: 40px;
     width: 80%;
     height: auto;
+    margin-top: 100px;
     background-color: white;
     z-index: 2;
-    margin-top: 100px;
     border-radius: 4px; }
     @media all and (max-width: 550px) {
       div.c-col2 div.form-container {
-        margin-top: 0;
-        width: 80%;
+        width: 90%;
         padding: 27px; } }
+    @media all and (max-width: 880px) {
+      div.c-col2 div.form-container {
+        margin-top: 0px; } }
+    div.c-col2 div.form-container img.logo-inside {
+      display: none;
+      width: 180px;
+      margin: 20px auto 25px; }
+      @media all and (max-width: 880px) {
+        div.c-col2 div.form-container img.logo-inside {
+          display: block; } }
     div.c-col2 div.form-container::before, div.c-col2 div.form-container::after {
       content: '';
       position: absolute; }
@@ -112,7 +124,7 @@ div.c-col2 {
       left: 0;
       width: 380px;
       height: 46px;
-      background-image: url(../images/index/shadow.png);
+      background-image: url(../images/common/shadow.png);
       background-repeat: no-repeat; }
       @media all and (max-width: 880px) {
         div.c-col2 div.form-container::before {
@@ -124,8 +136,7 @@ div.c-col2 {
       top: -170px;
       background-image: url(../images/index/fast-work.png);
       background-repeat: no-repeat;
-      z-index: -1;
-      background-color: red; }
+      z-index: -1; }
       @media all and (max-width: 880px) {
         div.c-col2 div.form-container::after {
           display: none; } }
@@ -143,7 +154,8 @@ div.c-col2 {
       position: relative;
       width: 100%;
       height: auto;
-      margin-bottom: 25px; }
+      margin-bottom: 20px;
+      text-align: left; }
       div.c-col2 div.form-container div.c-input label {
         display: block;
         margin-bottom: 10px;
@@ -151,7 +163,7 @@ div.c-col2 {
         color: #555;
         font-weight: 700;
         font-family: "Open Sans";
-        margin-bottom: 10px;
+        margin-bottom: 8px;
         -webkit-transition: all .5s ease-in-out;
         -o-transition: all .5s ease-in-out;
         transition: all .5s ease-in-out; }
@@ -170,7 +182,7 @@ div.c-col2 {
         div.c-col2 div.form-container div.c-input input[type="text"]:focus,
         div.c-col2 div.form-container div.c-input input[type="password"]:focus,
         div.c-col2 div.form-container div.c-input input[type="email"]:focus {
-          border-color: #2057cc; }
+          border-color: #0366d6; }
         @media all and (max-width: 550px) {
           div.c-col2 div.form-container div.c-input input[type="text"],
           div.c-col2 div.form-container div.c-input input[type="password"],
@@ -225,12 +237,12 @@ div.c-col2 {
           font-weight: bold;
           font-family: "Open Sans";
           font-size: 13px;
-          color: #0366d6 !important; }
+          color: #0366d6; }
       @media all and (max-width: 550px) {
         div.c-col2 div.form-container div.c-input.c-input-password {
           margin-bottom: 10px; } }
       div.c-col2 div.form-container div.c-input.current-row-form label {
-        color: #2057cc; }
+        color: #0366d6; }
     div.c-col2 div.form-container div.separador {
       position: relative;
       width: 100%;

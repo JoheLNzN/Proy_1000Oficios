@@ -1,10 +1,11 @@
 $color_blue: #1944A0;
 $color_yellow: #FFCF09;
 $color_focus: #0366d6;
+$color_shadow: #002D8B;
 
 $f_OS : 'Open Sans';
 
-div.container-index{
+div.container-account{
 	display: -webkit-flex;
 	display: -moz-flex;
 	display: -ms-flex;
@@ -12,76 +13,19 @@ div.container-index{
 	display: flex;
 	position: absolute;
 	width: 100%;
-	height: 100%;
+	min-height: 100%;
+	height: auto;
 	overflow: hidden;
+	padding: 100px 0px;
 
-	background-color: #1944A0;
+	background-color: $color_blue;
 	background-image: url(../images/common/pattern.png);
+
+	justify-content: center;
+	align-items: center;
 
 	@media all and (max-width: 550px){
 		background-size: 170px;
-	}
-}
-
-div.c-col1,
-div.c-col2{
-	width: 50%;
-	height: 100%;
-}
-
-div.c-col1{
-	position: relative;
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	padding: 10px;
-
-	justify-content: flex-end;
-	align-items: center;
-
-	@media all and (max-width: 880px){
-		display: none;
-	}
-
-	img.workers{
-		position: relative;
-		display: block;
-		width: 80%;
-		max-width: 700px;
-		z-index: 5;
-
-		@media all and (max-width: 1170px){
-			width: 90%;
-		}
-	}
-}
-
-div.c-col2{
-	display: flex;
-	position: relative;
-
-	align-items: center;
-	justify-content: center;
-
-	@media all and (max-width: 880px){
-		width: 100%;
-		align-items: center;
-	}
-
-	&::before{
-		content: '';
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		left: 244px;
-		background-color: #002E8B;
-		z-index: 2;
-
-		@media all and (max-width: 880px){
-			display: none;
-		}
 	}
 
 	div.c-svg{
@@ -89,47 +33,34 @@ div.c-col2{
 		width: 244px;
 		height: 1200px;
 		left: 0;
-		top: -100px;
-		background-image: url(../images/index/svg-lat.png);
-		background-size: 244px 1200px;
+		top: 0;
+
+		width: 100%;
+	    height: 215px;
+
+	    left: 0%;
+
+		background-image: url(../images/register/svg_top.svg);
 		background-repeat: no-repeat;
 		z-index: 1;
-
-		@media all and (max-width: 880px){
-			display: none;
-		}
 	}
 
 	div.form-container{
 		position: relative;
 		display: block;
-		max-width: 380px;
-		padding: 40px;
+		max-width: 1000px;
+		padding: 40px 50px;
 		width: 80%;
 		height: auto;
-		margin-top: 100px;
 		background-color: white;
 		z-index: 2;
+		margin-top: 130px;
 		
 		border-radius: 4px;
 
 		@media all and (max-width: 550px){
 			width: 90%;
 			padding: 27px;
-		}
-
-		@media all and (max-width: 880px){
-			margin-top: 0px;
-		}
-
-		img.logo-inside{
-			display: none;
-			width: 180px;
-			margin: 20px auto 25px;
-
-			@media all and (max-width: 880px){
-				display: block;
-			}
 		}
 
 		&::before,
@@ -153,28 +84,39 @@ div.c-col2{
 			}
 		}
 
-		&::after{
-			width: 300px;
-			height: 170px;
-			top: -170px;
-			background-image: url(../images/index/fast-work.png);
-			background-repeat: no-repeat;
-			z-index: -1;
-
-			@media all and (max-width: 880px){
-				display: none;
-			}
-		}
-
 		h1{
 			font-family: $f_OS;
 			color: $color_blue;
 		  	font-size: 38px;
 		  	letter-spacing: -2.5px;
-		 	text-align:center;
-		  	margin: 20px 0px 40px 0px;
 		  	transition:.2s linear;
+		  	margin-bottom: 25px;
 		}
+
+		div.form-container-inner{
+			display: -webkit-flex;
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+
+
+			div.form-inner-col1,
+			div.form-inner-col2{
+				width: 50%;
+				
+			}
+
+			div.form-inner-col1{
+				padding-right: 25px;
+			}
+
+			div.form-inner-col2{
+				padding-left: 25px;
+			}
+		}
+
+		
 
 		div.c-input{
 			position: relative;
@@ -238,6 +180,7 @@ div.c-col2{
   			}
 
   			div.c-link{
+
 
   				a.link-fp{
 	  				position: absolute;
