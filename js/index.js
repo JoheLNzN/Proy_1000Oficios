@@ -1,5 +1,3 @@
-$('input#txtEmail').focus();
-
 $('div.form-container div.c-input input.input').on('focus', function(){
 	$(this).parent().addClass('current-row-form');
 }).on('focusout', function(){
@@ -9,3 +7,5 @@ $('div.form-container div.c-input input.input').on('focus', function(){
 $('button#btnLogin').on('click', function(){
 	window.location.href= "../main.html";
 });
+
+$('input#txtEmail').focus();

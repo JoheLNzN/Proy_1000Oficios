@@ -1,3 +1,4 @@
+@charset "UTF-8";
 div.container-index {
   display: -webkit-flex;
   display: -moz-flex;
@@ -111,8 +112,8 @@ div.c-col2 {
         margin-top: 0px; } }
     div.c-col2 div.form-container img.logo-inside {
       display: none;
-      width: 180px;
-      margin: 20px auto 25px; }
+      width: 200px;
+      margin: 20px auto 30px; }
       @media all and (max-width: 880px) {
         div.c-col2 div.form-container img.logo-inside {
           display: block; } }
@@ -189,7 +190,9 @@ div.c-col2 {
           div.c-col2 div.form-container div.c-input input[type="email"] {
             padding: 10px; } }
       div.c-col2 div.form-container div.c-input button {
+        position: relative;
         display: block;
+        overflow: hidden;
         width: 100%;
         padding: 13px 18px;
         font-size: 14px;
@@ -198,13 +201,44 @@ div.c-col2 {
         text-align: center;
         border: 1px solid transparent;
         border-radius: 4px;
-        color: #fff;
+        color: #1944A0;
         background-color: #1944A0;
         -webkit-transition: all .3s ease;
         -o-transition: all .3s ease;
         transition: all .3s ease; }
+        div.c-col2 div.form-container div.c-input button::before, div.c-col2 div.form-container div.c-input button::after {
+          position: absolute; }
+        div.c-col2 div.form-container div.c-input button::before {
+          content: '';
+          top: 15px;
+          left: 25%;
+          width: 450px;
+          height: 450px;
+          background: #002E8B;
+          margin-left: -10em;
+          border-radius: 42.5%;
+          -webkit-transform-origin: 50% 50%;
+          -ms-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+          -webkit-animation: wave 5s infinite linear;
+          animation: wave 5s infinite linear;
+          -webkit-transition: all 2s ease, top 1.5s ease;
+          -o-transition: all 2s ease, top 1.5s ease;
+          transition: all 2s ease, top 1.5s ease;
+          z-index: 4; }
+        div.c-col2 div.form-container div.c-input button::after {
+          content: 'Iniciar Sesión';
+          width: 100%;
+          padding: 13px 0px;
+          font-size: 14px;
+          font-weight: 400;
+          line-height: 1.4;
+          text-align: center;
+          color: white;
+          top: 0;
+          left: 0;
+          z-index: 10; }
         div.c-col2 div.form-container div.c-input button:hover {
-          background-color: #1944A0;
           cursor: pointer; }
       div.c-col2 div.form-container div.c-input div.c-link a.link-fp {
         position: absolute;
@@ -227,6 +261,7 @@ div.c-col2 {
       div.c-col2 div.form-container div.c-input.c-input:last-child {
         margin-bottom: 0px; }
       div.c-col2 div.form-container div.c-input.c-input-cc {
+        position: relative;
         display: block;
         margin-top: 15px;
         text-align: center !important; }
@@ -271,3 +306,41 @@ div.c-col2 {
         @media all and (max-width: 880px) {
           div.c-col2 div.form-container div.separador span {
             font-size: 11px; } }
+
+@-moz-keyframes wave {
+  0% {
+    transform: rotate(0deg) scale(1); }
+  50% {
+    transform: rotate(180deg) scale(0.975); }
+  100% {
+    transform: rotate(360deg) scale(1); } }
+
+@-webkit-keyframes wave {
+  0% {
+    -webkit-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1); }
+  50% {
+    -webkit-transform: rotate(180deg) scale(0.975);
+    transform: rotate(180deg) scale(0.975); }
+  100% {
+    -webkit-transform: rotate(360deg) scale(1);
+    transform: rotate(360deg) scale(1); } }
+
+@-o-keyframes wave {
+  0% {
+    transform: rotate(0deg) scale(1); }
+  50% {
+    transform: rotate(180deg) scale(0.975); }
+  100% {
+    transform: rotate(360deg) scale(1); } }
+
+@keyframes wave {
+  0% {
+    -webkit-transform: rotate(0deg) scale(1);
+    transform: rotate(0deg) scale(1); }
+  50% {
+    -webkit-transform: rotate(180deg) scale(0.975);
+    transform: rotate(180deg) scale(0.975); }
+  100% {
+    -webkit-transform: rotate(360deg) scale(1);
+    transform: rotate(360deg) scale(1); } }
