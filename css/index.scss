@@ -2,6 +2,9 @@ $color_blue: #1944A0;
 $color_blueDark: #002E8B;
 $color_yellow: #FFCF09;
 $color_focus: #0366d6;
+$color_shadow: #002D8B;
+$color_border: #D0DCE6;
+$color_inputbg: #F5F7FA;
 
 $f_OS : 'Open Sans';
 
@@ -188,7 +191,6 @@ div.c-col2{
   				display: block;
 			    margin-bottom: 10px;
 			    font-size: 14px;
-			    color: #555;
 			    font-weight: 700;
 			    font-family: $f_OS;
 			    margin-bottom: 8px;
@@ -196,20 +198,34 @@ div.c-col2{
 			    transition: all .5s ease-in-out;
   			}
 
+  			label.required{
+		    	position: relative;
+
+		    	&::before{
+		    		content: '(*)';
+		    		position: absolute;
+		    		background-color: red;
+		    		width: 50px;
+		    		height: 50px;
+		    	}
+		    }
+
   			input[type="text"],
   			input[type="password"],
   			input[type="email"]{
   				display: block;
   				width: 100%;
-  				padding: 15px;
+  				padding: 13px 15px;
   				border-radius: 3px;
-  				border: 2px solid #eee;
+  				border: 1px solid $color_border;
+  				background-color: $color_inputbg;
   				font-size: 14px;
 
   				transition: all .5s ease-in-out;
 
   				&:focus{
   					border-color: $color_focus;
+  					background-color: white;
   				}
 
   				@media all and (max-width: 550px){
@@ -322,13 +338,6 @@ div.c-col2{
 
 	  			@media all and (max-width: 550px){
 	  				margin-bottom: 10px;
-	  			}
-	  		}
-
-	  		&.current-row-form{
-
-	  			label{
-	  				color: $color_focus;
 	  			}
 	  		}
   		}

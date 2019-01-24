@@ -1,7 +1,12 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700,300);
 
 $color_blue: #1944A0;
+$color_blueDark: #002E8B;
 $color_yellow: #FFCF09;
+$color_focus: #0366d6;
+$color_shadow: #002D8B;
+$color_border: #D0DCE6;
+$color_inputbg: #F5F7FA;
 
 $f_OS : 'Open Sans';
 
@@ -18,8 +23,23 @@ a{
 	text-decoration: none;
 }
 
+label{
+	color: #666;
+}
+
 body{
 	position: relative;
 	width: 100%;
 	min-height: 100vh;
+}
+
+div.current-row-form{
+
+	label{
+		color: $color_focus !important;
+	}
+}
+
+input[type="email"]{
+	color: blue !important;
 }

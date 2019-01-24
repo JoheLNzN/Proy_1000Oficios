@@ -160,21 +160,29 @@ div.c-col2 {
         display: block;
         margin-bottom: 10px;
         font-size: 14px;
-        color: #555;
         font-weight: 700;
         font-family: "Open Sans";
         margin-bottom: 8px;
         -webkit-transition: all .5s ease-in-out;
         -o-transition: all .5s ease-in-out;
         transition: all .5s ease-in-out; }
+      div.c-col2 div.form-container div.c-input label.required {
+        position: relative; }
+        div.c-col2 div.form-container div.c-input label.required::before {
+          content: '(*)';
+          position: absolute;
+          background-color: red;
+          width: 50px;
+          height: 50px; }
       div.c-col2 div.form-container div.c-input input[type="text"],
       div.c-col2 div.form-container div.c-input input[type="password"],
       div.c-col2 div.form-container div.c-input input[type="email"] {
         display: block;
         width: 100%;
-        padding: 15px;
+        padding: 13px 15px;
         border-radius: 3px;
-        border: 2px solid #eee;
+        border: 1px solid #D0DCE6;
+        background-color: #F5F7FA;
         font-size: 14px;
         -webkit-transition: all .5s ease-in-out;
         -o-transition: all .5s ease-in-out;
@@ -182,7 +190,8 @@ div.c-col2 {
         div.c-col2 div.form-container div.c-input input[type="text"]:focus,
         div.c-col2 div.form-container div.c-input input[type="password"]:focus,
         div.c-col2 div.form-container div.c-input input[type="email"]:focus {
-          border-color: #0366d6; }
+          border-color: #0366d6;
+          background-color: white; }
         @media all and (max-width: 550px) {
           div.c-col2 div.form-container div.c-input input[type="text"],
           div.c-col2 div.form-container div.c-input input[type="password"],
@@ -264,8 +273,6 @@ div.c-col2 {
       @media all and (max-width: 550px) {
         div.c-col2 div.form-container div.c-input.c-input-password {
           margin-bottom: 10px; } }
-      div.c-col2 div.form-container div.c-input.current-row-form label {
-        color: #0366d6; }
     div.c-col2 div.form-container div.separador {
       position: relative;
       width: 100%;

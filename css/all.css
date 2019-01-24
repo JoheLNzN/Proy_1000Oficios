@@ -13,7 +13,16 @@
 a {
   text-decoration: none; }
 
+label {
+  color: #666; }
+
 body {
   position: relative;
   width: 100%;
   min-height: 100vh; }
+
+div.current-row-form label {
+  color: #0366d6 !important; }
+
+input[type="email"] {
+  color: blue !important; }

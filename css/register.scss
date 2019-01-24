@@ -1,7 +1,10 @@
 $color_blue: #1944A0;
+$color_blueDark: #002E8B;
 $color_yellow: #FFCF09;
 $color_focus: #0366d6;
 $color_shadow: #002D8B;
+$color_border: #D0DCE6;
+$color_inputbg: rgb(251,251,251);
 
 $f_OS : 'Open Sans';
 
@@ -28,252 +31,191 @@ div.container-account{
 		background-size: 170px;
 	}
 
-	div.c-svg{
-		position: absolute;
-		width: 244px;
-		height: 1200px;
-		left: 0;
-		top: 0;
-
-		width: 100%;
-	    height: 215px;
-
-	    left: 0%;
-
-		background-image: url(../images/register/svg_top.svg);
-		background-repeat: no-repeat;
-		z-index: 1;
-	}
-
 	div.form-container{
 		position: relative;
 		display: block;
-		max-width: 1000px;
-		padding: 40px 50px;
+		max-width: 800px;
 		width: 80%;
 		height: auto;
 		background-color: white;
 		z-index: 2;
-		margin-top: 130px;
-		
-		border-radius: 4px;
 
-		@media all and (max-width: 550px){
-			width: 90%;
-			padding: 27px;
-		}
-
-		&::before,
-		&::after{
+		&:before{
 			content: '';
 			position: absolute;
-		}
-
-		&::before{
-			bottom: -46px;
-			left: 0;
-			width: 380px;
-			height: 46px;
-
-			background-image: url(../images/common/shadow.png);
+			width: 244px;
+			height: 100%;
+			right: 0;
+			top: 0;
+			background-image: url(../images/index/svg-lat.png);
+			background-size: 244px 1200px;
 			background-repeat: no-repeat;
+			z-index: 1;
 
 			@media all and (max-width: 880px){
-				width: 100%;
-				background-size: 100%;
+				display: none;
 			}
-		}
-
-		h1{
-			font-family: $f_OS;
-			color: $color_blue;
-		  	font-size: 38px;
-		  	letter-spacing: -2.5px;
-		  	transition:.2s linear;
-		  	margin-bottom: 25px;
 		}
 
 		div.form-container-inner{
-			display: -webkit-flex;
-			display: -moz-flex;
-			display: -ms-flex;
-			display: -o-flex;
-			display: flex;
+			width: calc(100% - 244px);
+			padding: 40px 0px 40px 40px;
 
+			div.f-row{
+				display: -webkit-flex;
+				display: -moz-flex;
+				display: -ms-flex;
+				display: -o-flex;
+				display: flex;
+				width: 100%;
+				margin-bottom: 18px;
 
-			div.form-inner-col1,
-			div.form-inner-col2{
-				width: 50%;
-				
+				div.f-col-multiple{
+					width: 100%;
+
+					div.c-input{
+						position: relative;
+
+						&.c-required{
+
+							&::before{
+								position: absolute;
+								content: '(*)';
+								right: 0;
+								top: 4px;
+								color: darken($color_border, 5);
+								font-family: $f_OS;
+								font-size: 10px;
+							}
+						}
+
+						label{
+							display: block;
+							font-weight: bold;
+							font-family: $f_OS;
+							font-size: 14px;
+							padding-bottom: 8px;
+						}
+
+						input[type="text"],
+			  			input[type="password"],
+			  			input[type="email"]{
+			  				display: block;
+			  				width: 100%;
+			  				padding: 13px 15px;
+			  				border-radius: 3px;
+			  				border: 1px solid $color_border;
+			  				background-color: $color_inputbg;
+			  				font-size: 14px;
+
+			  				transition: all .5s ease-in-out;
+
+			  				&:focus{
+			  					border-color: $color_focus;
+			  					background-color: white;
+			  				}
+			  			}
+
+			  			button{
+			  				position: relative;
+			  				display: inline-block;
+						    overflow: hidden;
+						    padding: 15px 25px;
+						    font-size: 14px;
+						    font-weight: 400;
+						    text-align: center;
+						    border: 1px solid transparent;
+						    border-radius: 4px;
+						    color: white;
+						    transition: all .3s ease-in;
+
+			  				&.btnCancel{
+			  					color: #f16666;
+			  					background-color: white;
+			  					font-weight: bold;
+			  				}
+
+			  				&.btnOk{
+			  					background-color: $color_blue;
+			  				}
+			  			}
+					}
+				}
+
+				div.f-col{
+					width: 50%;
+
+					div.c-input{
+						position: relative;
+
+						&.c-required{
+
+							&::before{
+								position: absolute;
+								content: '(*)';
+								right: 0;
+								top: 4px;
+								color: darken($color_border, 5);
+								font-family: $f_OS;
+								font-size: 10px;
+							}
+						}
+
+						label{
+							display: block;
+							font-weight: bold;
+							font-family: $f_OS;
+							font-size: 14px;
+							padding-bottom: 8px;
+						}
+
+						input[type="text"],
+			  			input[type="password"],
+			  			input[type="email"]{
+			  				display: block;
+			  				width: 100%;
+			  				padding: 13px 15px;
+			  				border-radius: 3px;
+			  				border: 1px solid $color_border;
+			  				background-color: $color_inputbg;
+			  				font-size: 14px;
+
+			  				transition: all .5s ease-in-out;
+
+			  				&:focus{
+			  					border-color: $color_focus;
+			  					background-color: white;
+			  				}
+			  			}
+					}
+				}
+
+				div.f-col1{
+					padding-right: 10px;
+				}
+
+				div.f-col2{
+					padding-left: 10px;
+				}
 			}
 
-			div.form-inner-col1{
-				padding-right: 25px;
-			}
+			div.f-row-separator{
+				position: relative;
+				width: 100%;
+				height: 33px;
+				margin-bottom: 14px;
 
-			div.form-inner-col2{
-				padding-left: 25px;
+				&:before{
+					content: '';
+					position: absolute;
+					width: 100%;
+					height: 1px;
+					top: 50%;
+					left: 0;
+					margin-top: -0.5px;
+					background-color: $color_border;
+				}
 			}
 		}
-
-		
-
-		div.c-input{
-			position: relative;
-  			width: 100%;
-  			height: auto;
-  			margin-bottom: 20px;
-  			text-align: left;
-
-  			label{
-  				display: block;
-			    margin-bottom: 10px;
-			    font-size: 14px;
-			    color: #555;
-			    font-weight: 700;
-			    font-family: $f_OS;
-			    margin-bottom: 8px;
-
-			    transition: all .5s ease-in-out;
-  			}
-
-  			input[type="text"],
-  			input[type="password"],
-  			input[type="email"]{
-  				display: block;
-  				width: 100%;
-  				padding: 15px;
-  				border-radius: 3px;
-  				border: 2px solid #eee;
-  				font-size: 14px;
-
-  				transition: all .5s ease-in-out;
-
-  				&:focus{
-  					border-color: $color_focus;
-  				}
-
-  				@media all and (max-width: 550px){
-					padding: 10px;
-				}
-  			}
-
-  			button{
-  				display: block;
-  				width: 100%;
-			    padding: 13px 18px;
-			    font-size: 14px;
-			    font-weight: 400;
-			    line-height: 1.4;
-			    text-align: center;
-			    border: 1px solid transparent;
-			    border-radius: 4px;
-			    color: #fff;
-			    background-color: $color_blue;
-
-			    transition: all .3s ease;
-
-			    &:hover{
-			    	background-color: $color_blue;
-			    	cursor: pointer;
-			    }
-  			}
-
-  			div.c-link{
-
-
-  				a.link-fp{
-	  				position: absolute;
-	  				display: block;
-	  				text-align: right;
-	  				font-family: $f_OS;
-	  				font-size: 13px;
-	  				color: #e74c3c;
-	  				top: 0;
-	  				right: 0;
-
-	  				transition: all .3s ease;
-
-	  				@media all and (max-width: 500px){
-	  					position: relative;
-	  					margin-bottom: 12px;
-	  					font-size: 11px;
-	  				}
-
-	  				&:hover{
-	  					text-decoration: underline;
-	  				}
-	  			}
-  			}
-
-  			&.c-input:last-child{
-	  			margin-bottom: 0px;
-	  		}
-
-	  		&.c-input-cc{
-	  			display: block;
-	  			margin-top: 15px;
-	  			text-align: center !important;
-
-	  			a{
-	  				position: relative !important;
-	  				display: inline-block;
-	  				font-weight: bold;
-	  				font-family: $f_OS;
-	  				font-size: 13px;
-	  				color: $color_focus;
-	  			}
-	  		}
-
-	  		&.c-input-password{
-
-	  			@media all and (max-width: 550px){
-	  				margin-bottom: 10px;
-	  			}
-	  		}
-
-	  		&.current-row-form{
-
-	  			label{
-	  				color: $color_focus;
-	  			}
-	  		}
-  		}
-
-  		div.separador{
-  			position: relative;
-  			width: 100%;
-  			height: 20px;
-  			line-height: 20px;
-  			text-align: center;
-
-  			&::before{
-  				position: absolute;
-  				content: '';
-  				width: 100%;
-  				height: 1px;
-  				left: 0;
-  				top: 50%;
-  				margin-top: -0.5px;
-  				background-color: #DDD;
-  				z-index: 1;
-  			}
-
-  			span{
-  				position: relative;
-  				display: inline-block;
-  				text-align: center;
-  				font-family: $f_OS;
-  				font-size: 13px;
-  				color: #888;
-  				background-color: white;
-  				z-index: 25;
-  				padding: 0px 10px;
-
-  				@media all and (max-width: 880px){
-  					font-size: 11px;
-  				}
-  			}
-  		}
 	}
 }

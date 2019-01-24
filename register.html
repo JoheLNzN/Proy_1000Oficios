@@ -13,61 +13,106 @@
 
 	<div class="container-account">
 
-		<div class="c-svg"></div><!--c-svg-->
-
 		<div class="form-container">
-
-			<h1>Crear cuenta</h1>
 
 			<div class="form-container-inner">
 
-				<div class="form-inner-col1">
+				<div class="f-row">
+					<div class="f-col-multiple">
+						<div class="c-input c-required">
+							<label for="txtEmail">Correo electrónico</label>
+							<input type="email" id="txtEmail" class="input"/>
+						</div><!--c-input-->
+					</div><!--f-col1-->
+				</div><!--f-row-->
 
-					<div class="c-input">
-						<label for="txtName">Nombres</label>
-						<input type="text" id="txtName" autocomplete="off" class="input" />
-					</div><!--c-input-->
-
-					<div class="c-input">
-						<label for="txtLastname">Apellidos</label>
-						<input type="text" id="txtLastname" autocomplete="off" class="input"/>
-					</div>
-
-					<div class="c-input">
-						<label for="txtDni">Dni</label>
-						<input type="text" id="txtDni" autocomplete="off" class="input"/>
-					</div>
-
-					<div class="c-input">
-						<label for="txtEmail">Correo electrónico</label>
-						<input type="email" id="txtEmail" autocomplete="off" class="input"/>
-					</div>
+				<div class="f-row">
 					
-				</div><!--form-inner-col1-->
+					<div class="f-col f-col1">
+						<div class="c-input c-required">
+							<label for="txtPassword">Contraseña</label>
+							<input type="password" id="txtPassword" class="input"/>
+						</div><!--c-input-->
+					</div><!--f-col2-->
+					<div class="f-col f-col2">
+						<div class="c-input c-required">
+							<label for="txtConfirmPassword">Confirmar contraseña</label>
+							<input type="password" id="txtConfirmPassword" class="input"/>
+						</div><!--c-input-->
+					</div><!--f-col2-->
 
-				<div class="form-inner-col2">
+				</div><!--f-row-->
 
-					<div class="c-input">
-						<label for="txtAccount">Nombre de usuario</label>
-						<input type="text" id="txtAccount" autocomplete="off" class="input"/>
-					</div>
+				<div class="f-row-separator"></div><!--f-row-separator-->
 
-					<div class="c-input">
-						<label for="txtPassword">Contraseña</label>
-						<input type="text" id="txtPassword" autocomplete="off" class="input"/>
-					</div>
+				<div class="f-row">
+					<div class="f-col-multiple">
+						<div class="c-input c-required">
+							<label for="txtName">Nombre</label>
+							<input type="text" id="txtName" class="input"/>
+						</div><!--c-input-->
+					</div><!--f-col1-->
+				</div><!--f-row-->
 
-					<div class="c-input">
-						<button id="btnLogin">[ Crear Cuenta ]</button>
-					</div>
+				<div class="f-row">
+					<div class="f-col f-col1">
+						<div class="c-input c-required">
+							<label for="txtLastnameP">Apellido Paterno</label>
+							<input type="text" id="txtLastnameP" class="input"/>
+						</div><!--c-input-->
+					</div><!--f-col2-->
+					<div class="f-col f-col2">
+						<div class="c-input c-required">
+							<label for="txtLastnameM">Apellido Materno</label>
+							<input type="text" id="txtLastnameM" class="input"/>
+						</div><!--c-input-->
+					</div><!--f-col2-->
+				</div><!--f-row-->
 
-				</div><!--form-inner-col2-->
+				<div class="f-row">
+					<div class="f-col f-col1">
+						<div class="c-input c-required">
+							<label for="txtDni">Dni</label>
+							<input type="text" id="txtDni" class="input"/>
+						</div><!--c-input-->
+					</div><!--f-col2-->
+					<div class="f-col f-col2">
+						<div class="c-input">
+							<label for="txtCelular">Celular</label>
+							<input type="text" id="txtCelular" class="input"/>
+						</div><!--c-input-->
+					</div><!--f-col2-->
+				</div><!--f-row-->
+
+				<div class="f-row">
+					<div class="f-col f-col1">
+						<div class="c-input">
+							<label for="txtBirthdate">Fecha de Nacimiento</label>
+							<input type="text" id="txtBirthdate" class="input" />
+						</div><!--c-input-->
+					</div><!--f-col2-->
+					<div class="f-col f-col2">
+						
+					</div><!--f-col2-->
+				</div><!--f-row-->
+
+				<div class="f-row-separator"></div><!--f-row-separator-->
+
+				<div class="f-row">
+					<div class="f-col-multiple">
+						<div class="c-input">
+							<button class="btnOk">Aceptar</button>
+							<button class="btnCancel">Iniciar Sesión</button>
+						</div>
+					</div><!--f-col-multiple-->
+				</div><!--f-row-->
 
 			</div><!--form-container-inner-->
-
 		</div><!--form-container-->
-
 	</div><!--container-account-->
-	
+
+	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/all.js"></script>
+	<script src="js/register.js"></script>
 </body>
 </html>

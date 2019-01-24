@@ -23,190 +23,148 @@ div.container-account {
   @media all and (max-width: 550px) {
     div.container-account {
       background-size: 170px; } }
-  div.container-account div.c-svg {
-    position: absolute;
-    width: 244px;
-    height: 1200px;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 215px;
-    left: 0%;
-    background-image: url(../images/register/svg_top.svg);
-    background-repeat: no-repeat;
-    z-index: 1; }
   div.container-account div.form-container {
     position: relative;
     display: block;
-    max-width: 1000px;
-    padding: 40px 50px;
+    max-width: 800px;
     width: 80%;
     height: auto;
     background-color: white;
-    z-index: 2;
-    margin-top: 130px;
-    border-radius: 4px; }
-    @media all and (max-width: 550px) {
-      div.container-account div.form-container {
-        width: 90%;
-        padding: 27px; } }
-    div.container-account div.form-container::before, div.container-account div.form-container::after {
+    z-index: 2; }
+    div.container-account div.form-container:before {
       content: '';
-      position: absolute; }
-    div.container-account div.form-container::before {
-      bottom: -46px;
-      left: 0;
-      width: 380px;
-      height: 46px;
-      background-image: url(../images/common/shadow.png);
-      background-repeat: no-repeat; }
+      position: absolute;
+      width: 244px;
+      height: 100%;
+      right: 0;
+      top: 0;
+      background-image: url(../images/index/svg-lat.png);
+      background-size: 244px 1200px;
+      background-repeat: no-repeat;
+      z-index: 1; }
       @media all and (max-width: 880px) {
-        div.container-account div.form-container::before {
-          width: 100%;
-          background-size: 100%; } }
-    div.container-account div.form-container h1 {
-      font-family: "Open Sans";
-      color: #1944A0;
-      font-size: 38px;
-      letter-spacing: -2.5px;
-      -webkit-transition: .2s linear;
-      -o-transition: .2s linear;
-      transition: .2s linear;
-      margin-bottom: 25px; }
+        div.container-account div.form-container:before {
+          display: none; } }
     div.container-account div.form-container div.form-container-inner {
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flex;
-      display: -o-flex;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex; }
-      div.container-account div.form-container div.form-container-inner div.form-inner-col1,
-      div.container-account div.form-container div.form-container-inner div.form-inner-col2 {
-        width: 50%; }
-      div.container-account div.form-container div.form-container-inner div.form-inner-col1 {
-        padding-right: 25px; }
-      div.container-account div.form-container div.form-container-inner div.form-inner-col2 {
-        padding-left: 25px; }
-    div.container-account div.form-container div.c-input {
-      position: relative;
-      width: 100%;
-      height: auto;
-      margin-bottom: 20px;
-      text-align: left; }
-      div.container-account div.form-container div.c-input label {
-        display: block;
-        margin-bottom: 10px;
-        font-size: 14px;
-        color: #555;
-        font-weight: 700;
-        font-family: "Open Sans";
-        margin-bottom: 8px;
-        -webkit-transition: all .5s ease-in-out;
-        -o-transition: all .5s ease-in-out;
-        transition: all .5s ease-in-out; }
-      div.container-account div.form-container div.c-input input[type="text"],
-      div.container-account div.form-container div.c-input input[type="password"],
-      div.container-account div.form-container div.c-input input[type="email"] {
-        display: block;
+      width: calc(100% - 244px);
+      padding: 40px 0px 40px 40px; }
+      div.container-account div.form-container div.form-container-inner div.f-row {
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flex;
+        display: -o-flex;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
         width: 100%;
-        padding: 15px;
-        border-radius: 3px;
-        border: 2px solid #eee;
-        font-size: 14px;
-        -webkit-transition: all .5s ease-in-out;
-        -o-transition: all .5s ease-in-out;
-        transition: all .5s ease-in-out; }
-        div.container-account div.form-container div.c-input input[type="text"]:focus,
-        div.container-account div.form-container div.c-input input[type="password"]:focus,
-        div.container-account div.form-container div.c-input input[type="email"]:focus {
-          border-color: #0366d6; }
-        @media all and (max-width: 550px) {
-          div.container-account div.form-container div.c-input input[type="text"],
-          div.container-account div.form-container div.c-input input[type="password"],
-          div.container-account div.form-container div.c-input input[type="email"] {
-            padding: 10px; } }
-      div.container-account div.form-container div.c-input button {
-        display: block;
-        width: 100%;
-        padding: 13px 18px;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 1.4;
-        text-align: center;
-        border: 1px solid transparent;
-        border-radius: 4px;
-        color: #fff;
-        background-color: #1944A0;
-        -webkit-transition: all .3s ease;
-        -o-transition: all .3s ease;
-        transition: all .3s ease; }
-        div.container-account div.form-container div.c-input button:hover {
-          background-color: #1944A0;
-          cursor: pointer; }
-      div.container-account div.form-container div.c-input div.c-link a.link-fp {
-        position: absolute;
-        display: block;
-        text-align: right;
-        font-family: "Open Sans";
-        font-size: 13px;
-        color: #e74c3c;
-        top: 0;
-        right: 0;
-        -webkit-transition: all .3s ease;
-        -o-transition: all .3s ease;
-        transition: all .3s ease; }
-        @media all and (max-width: 500px) {
-          div.container-account div.form-container div.c-input div.c-link a.link-fp {
-            position: relative;
-            margin-bottom: 12px;
-            font-size: 11px; } }
-        div.container-account div.form-container div.c-input div.c-link a.link-fp:hover {
-          text-decoration: underline; }
-      div.container-account div.form-container div.c-input.c-input:last-child {
-        margin-bottom: 0px; }
-      div.container-account div.form-container div.c-input.c-input-cc {
-        display: block;
-        margin-top: 15px;
-        text-align: center !important; }
-        div.container-account div.form-container div.c-input.c-input-cc a {
-          position: relative !important;
-          display: inline-block;
-          font-weight: bold;
-          font-family: "Open Sans";
-          font-size: 13px;
-          color: #0366d6; }
-      @media all and (max-width: 550px) {
-        div.container-account div.form-container div.c-input.c-input-password {
-          margin-bottom: 10px; } }
-      div.container-account div.form-container div.c-input.current-row-form label {
-        color: #0366d6; }
-    div.container-account div.form-container div.separador {
-      position: relative;
-      width: 100%;
-      height: 20px;
-      line-height: 20px;
-      text-align: center; }
-      div.container-account div.form-container div.separador::before {
-        position: absolute;
-        content: '';
-        width: 100%;
-        height: 1px;
-        left: 0;
-        top: 50%;
-        margin-top: -0.5px;
-        background-color: #DDD;
-        z-index: 1; }
-      div.container-account div.form-container div.separador span {
+        margin-bottom: 18px; }
+        div.container-account div.form-container div.form-container-inner div.f-row div.f-col-multiple {
+          width: 100%; }
+          div.container-account div.form-container div.form-container-inner div.f-row div.f-col-multiple div.c-input {
+            position: relative; }
+            div.container-account div.form-container div.form-container-inner div.f-row div.f-col-multiple div.c-input.c-required::before {
+              position: absolute;
+              content: '(*)';
+              right: 0;
+              top: 4px;
+              color: #bfd0dd;
+              font-family: "Open Sans";
+              font-size: 10px; }
+            div.container-account div.form-container div.form-container-inner div.f-row div.f-col-multiple div.c-input label {
+              display: block;
+              font-weight: bold;
+              font-family: "Open Sans";
+              font-size: 14px;
+              padding-bottom: 8px; }
+            div.container-account div.form-container div.form-container-inner div.f-row div.f-col-multiple div.c-input input[type="text"],
+            div.container-account div.form-container div.form-container-inner div.f-row div.f-col-multiple div.c-input input[type="password"],
+            div.container-account div.form-container div.form-container-inner div.f-row div.f-col-multiple div.c-input input[type="email"] {
+              display: block;
+              width: 100%;
+              padding: 13px 15px;
+              border-radius: 3px;
+              border: 1px solid #D0DCE6;
+              background-color: #fbfbfb;
+              font-size: 14px;
+              -webkit-transition: all .5s ease-in-out;
+              -o-transition: all .5s ease-in-out;
+              transition: all .5s ease-in-out; }
+              div.container-account div.form-container div.form-container-inner div.f-row div.f-col-multiple div.c-input input[type="text"]:focus,
+              div.container-account div.form-container div.form-container-inner div.f-row div.f-col-multiple div.c-input input[type="password"]:focus,
+              div.container-account div.form-container div.form-container-inner div.f-row div.f-col-multiple div.c-input input[type="email"]:focus {
+                border-color: #0366d6;
+                background-color: white; }
+            div.container-account div.form-container div.form-container-inner div.f-row div.f-col-multiple div.c-input button {
+              position: relative;
+              display: inline-block;
+              overflow: hidden;
+              padding: 15px 25px;
+              font-size: 14px;
+              font-weight: 400;
+              text-align: center;
+              border: 1px solid transparent;
+              border-radius: 4px;
+              color: white;
+              -webkit-transition: all .3s ease-in;
+              -o-transition: all .3s ease-in;
+              transition: all .3s ease-in; }
+              div.container-account div.form-container div.form-container-inner div.f-row div.f-col-multiple div.c-input button.btnCancel {
+                color: #f16666;
+                background-color: white;
+                font-weight: bold; }
+              div.container-account div.form-container div.form-container-inner div.f-row div.f-col-multiple div.c-input button.btnOk {
+                background-color: #1944A0; }
+        div.container-account div.form-container div.form-container-inner div.f-row div.f-col {
+          width: 50%; }
+          div.container-account div.form-container div.form-container-inner div.f-row div.f-col div.c-input {
+            position: relative; }
+            div.container-account div.form-container div.form-container-inner div.f-row div.f-col div.c-input.c-required::before {
+              position: absolute;
+              content: '(*)';
+              right: 0;
+              top: 4px;
+              color: #bfd0dd;
+              font-family: "Open Sans";
+              font-size: 10px; }
+            div.container-account div.form-container div.form-container-inner div.f-row div.f-col div.c-input label {
+              display: block;
+              font-weight: bold;
+              font-family: "Open Sans";
+              font-size: 14px;
+              padding-bottom: 8px; }
+            div.container-account div.form-container div.form-container-inner div.f-row div.f-col div.c-input input[type="text"],
+            div.container-account div.form-container div.form-container-inner div.f-row div.f-col div.c-input input[type="password"],
+            div.container-account div.form-container div.form-container-inner div.f-row div.f-col div.c-input input[type="email"] {
+              display: block;
+              width: 100%;
+              padding: 13px 15px;
+              border-radius: 3px;
+              border: 1px solid #D0DCE6;
+              background-color: #fbfbfb;
+              font-size: 14px;
+              -webkit-transition: all .5s ease-in-out;
+              -o-transition: all .5s ease-in-out;
+              transition: all .5s ease-in-out; }
+              div.container-account div.form-container div.form-container-inner div.f-row div.f-col div.c-input input[type="text"]:focus,
+              div.container-account div.form-container div.form-container-inner div.f-row div.f-col div.c-input input[type="password"]:focus,
+              div.container-account div.form-container div.form-container-inner div.f-row div.f-col div.c-input input[type="email"]:focus {
+                border-color: #0366d6;
+                background-color: white; }
+        div.container-account div.form-container div.form-container-inner div.f-row div.f-col1 {
+          padding-right: 10px; }
+        div.container-account div.form-container div.form-container-inner div.f-row div.f-col2 {
+          padding-left: 10px; }
+      div.container-account div.form-container div.form-container-inner div.f-row-separator {
         position: relative;
-        display: inline-block;
-        text-align: center;
-        font-family: "Open Sans";
-        font-size: 13px;
-        color: #888;
-        background-color: white;
-        z-index: 25;
-        padding: 0px 10px; }
-        @media all and (max-width: 880px) {
-          div.container-account div.form-container div.separador span {
-            font-size: 11px; } }
+        width: 100%;
+        height: 33px;
+        margin-bottom: 14px; }
+        div.container-account div.form-container div.form-container-inner div.f-row-separator:before {
+          content: '';
+          position: absolute;
+          width: 100%;
+          height: 1px;
+          top: 50%;
+          left: 0;
+          margin-top: -0.5px;
+          background-color: #D0DCE6; }
