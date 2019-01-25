@@ -10,161 +10,179 @@ div.container-account {
   width: 100%;
   min-height: 100%;
   height: auto;
-  overflow: hidden;
-  padding: 100px 0px;
-  background-color: #1944A0;
-  background-image: url(../images/common/pattern.png);
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
+  overflow: hidden; }
   @media all and (max-width: 550px) {
     div.container-account {
       background-size: 170px; } }
-  div.container-account div.form-container {
-    position: relative;
-    display: block;
-    max-width: 800px;
-    width: 80%;
-    height: auto;
-    background-color: white;
-    z-index: 2; }
-    div.container-account div.form-container:before {
-      content: '';
-      position: absolute;
-      width: 244px;
-      height: 100%;
-      right: 0;
-      top: 0;
-      background-image: url(../images/index/svg-lat.png);
-      background-size: 244px 1200px;
-      background-repeat: no-repeat;
-      z-index: 1; }
-      @media all and (max-width: 880px) {
-        div.container-account div.form-container:before {
-          display: none; } }
-    div.container-account div.form-container div.form-container-inner {
-      width: calc(100% - 244px);
-      padding: 40px 0px 40px 40px; }
-      div.container-account div.form-container div.form-container-inner div.f-row {
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
+  div.container-account div.col1,
+  div.container-account div.col2 {
+    width: 50%;
+    min-height: 100vh; }
+  div.container-account div.col1 {
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #002E8B;
+    padding: 40px 0px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    div.container-account div.col1 div.form-container {
+      position: relative;
+      display: block;
+      max-width: 550px;
+      width: 80%;
+      height: auto;
+      background-color: white;
+      z-index: 2;
+      border-radius: 8px; }
+      div.container-account div.col1 div.form-container div.form-container-inner {
         width: 100%;
-        margin-bottom: 18px; }
-        div.container-account div.form-container div.form-container-inner div.f-row div.f-col-multiple {
-          width: 100%; }
-          div.container-account div.form-container div.form-container-inner div.f-row div.f-col-multiple div.c-input {
-            position: relative; }
-            div.container-account div.form-container div.form-container-inner div.f-row div.f-col-multiple div.c-input.c-required::before {
-              position: absolute;
-              content: '(*)';
-              right: 0;
-              top: 4px;
-              color: #bfd0dd;
-              font-family: "Open Sans";
-              font-size: 10px; }
-            div.container-account div.form-container div.form-container-inner div.f-row div.f-col-multiple div.c-input label {
-              display: block;
-              font-weight: bold;
-              font-family: "Open Sans";
-              font-size: 14px;
-              padding-bottom: 8px; }
-            div.container-account div.form-container div.form-container-inner div.f-row div.f-col-multiple div.c-input input[type="text"],
-            div.container-account div.form-container div.form-container-inner div.f-row div.f-col-multiple div.c-input input[type="password"],
-            div.container-account div.form-container div.form-container-inner div.f-row div.f-col-multiple div.c-input input[type="email"] {
-              display: block;
-              width: 100%;
-              padding: 13px 15px;
-              border-radius: 3px;
-              border: 1px solid #D0DCE6;
-              background-color: #fbfbfb;
-              font-size: 14px;
-              -webkit-transition: all .5s ease-in-out;
-              -o-transition: all .5s ease-in-out;
-              transition: all .5s ease-in-out; }
-              div.container-account div.form-container div.form-container-inner div.f-row div.f-col-multiple div.c-input input[type="text"]:focus,
-              div.container-account div.form-container div.form-container-inner div.f-row div.f-col-multiple div.c-input input[type="password"]:focus,
-              div.container-account div.form-container div.form-container-inner div.f-row div.f-col-multiple div.c-input input[type="email"]:focus {
-                border-color: #0366d6;
-                background-color: white; }
-            div.container-account div.form-container div.form-container-inner div.f-row div.f-col-multiple div.c-input button {
-              position: relative;
-              display: inline-block;
-              overflow: hidden;
-              padding: 15px 25px;
-              font-size: 14px;
-              font-weight: 400;
-              text-align: center;
-              border: 1px solid transparent;
-              border-radius: 4px;
-              color: white;
-              -webkit-transition: all .3s ease-in;
-              -o-transition: all .3s ease-in;
-              transition: all .3s ease-in; }
-              div.container-account div.form-container div.form-container-inner div.f-row div.f-col-multiple div.c-input button.btnCancel {
-                color: #f16666;
-                background-color: white;
-                font-weight: bold; }
-              div.container-account div.form-container div.form-container-inner div.f-row div.f-col-multiple div.c-input button.btnOk {
-                background-color: #1944A0; }
-        div.container-account div.form-container div.form-container-inner div.f-row div.f-col {
-          width: 50%; }
-          div.container-account div.form-container div.form-container-inner div.f-row div.f-col div.c-input {
-            position: relative; }
-            div.container-account div.form-container div.form-container-inner div.f-row div.f-col div.c-input.c-required::before {
-              position: absolute;
-              content: '(*)';
-              right: 0;
-              top: 4px;
-              color: #bfd0dd;
-              font-family: "Open Sans";
-              font-size: 10px; }
-            div.container-account div.form-container div.form-container-inner div.f-row div.f-col div.c-input label {
-              display: block;
-              font-weight: bold;
-              font-family: "Open Sans";
-              font-size: 14px;
-              padding-bottom: 8px; }
-            div.container-account div.form-container div.form-container-inner div.f-row div.f-col div.c-input input[type="text"],
-            div.container-account div.form-container div.form-container-inner div.f-row div.f-col div.c-input input[type="password"],
-            div.container-account div.form-container div.form-container-inner div.f-row div.f-col div.c-input input[type="email"] {
-              display: block;
-              width: 100%;
-              padding: 13px 15px;
-              border-radius: 3px;
-              border: 1px solid #D0DCE6;
-              background-color: #fbfbfb;
-              font-size: 14px;
-              -webkit-transition: all .5s ease-in-out;
-              -o-transition: all .5s ease-in-out;
-              transition: all .5s ease-in-out; }
-              div.container-account div.form-container div.form-container-inner div.f-row div.f-col div.c-input input[type="text"]:focus,
-              div.container-account div.form-container div.form-container-inner div.f-row div.f-col div.c-input input[type="password"]:focus,
-              div.container-account div.form-container div.form-container-inner div.f-row div.f-col div.c-input input[type="email"]:focus {
-                border-color: #0366d6;
-                background-color: white; }
-        div.container-account div.form-container div.form-container-inner div.f-row div.f-col1 {
-          padding-right: 10px; }
-        div.container-account div.form-container div.form-container-inner div.f-row div.f-col2 {
-          padding-left: 10px; }
-      div.container-account div.form-container div.form-container-inner div.f-row-separator {
-        position: relative;
-        width: 100%;
-        height: 33px;
-        margin-bottom: 14px; }
-        div.container-account div.form-container div.form-container-inner div.f-row-separator:before {
-          content: '';
-          position: absolute;
+        padding: 40px 40px 40px 40px; }
+        div.container-account div.col1 div.form-container div.form-container-inner div.f-row {
+          display: -webkit-flex;
+          display: -moz-flex;
+          display: -ms-flex;
+          display: -o-flex;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
           width: 100%;
-          height: 1px;
-          top: 50%;
-          left: 0;
-          margin-top: -0.5px;
-          background-color: #D0DCE6; }
+          margin-bottom: 18px; }
+          @media all and (max-width: 1165px) {
+            div.container-account div.col1 div.form-container div.form-container-inner div.f-row {
+              -ms-flex-wrap: wrap;
+              flex-wrap: wrap; } }
+          div.container-account div.col1 div.form-container div.form-container-inner div.f-row div.f-col-multiple {
+            width: 100%; }
+            div.container-account div.col1 div.form-container div.form-container-inner div.f-row div.f-col-multiple div.c-input {
+              position: relative; }
+              div.container-account div.col1 div.form-container div.form-container-inner div.f-row div.f-col-multiple div.c-input.c-required::before {
+                position: absolute;
+                content: '(*)';
+                right: 0;
+                top: 4px;
+                color: #bfd0dd;
+                font-family: "Open Sans";
+                font-size: 10px; }
+              div.container-account div.col1 div.form-container div.form-container-inner div.f-row div.f-col-multiple div.c-input label {
+                display: block;
+                font-weight: bold;
+                font-family: "Open Sans";
+                font-size: 14px;
+                padding-bottom: 8px; }
+              div.container-account div.col1 div.form-container div.form-container-inner div.f-row div.f-col-multiple div.c-input input[type="text"],
+              div.container-account div.col1 div.form-container div.form-container-inner div.f-row div.f-col-multiple div.c-input input[type="password"],
+              div.container-account div.col1 div.form-container div.form-container-inner div.f-row div.f-col-multiple div.c-input input[type="email"] {
+                display: block;
+                width: 100%;
+                padding: 13px 15px;
+                border-radius: 3px;
+                border: 1px solid #D0DCE6;
+                background-color: #fbfbfb;
+                font-size: 14px;
+                -webkit-transition: all .5s ease-in-out;
+                -o-transition: all .5s ease-in-out;
+                transition: all .5s ease-in-out; }
+                div.container-account div.col1 div.form-container div.form-container-inner div.f-row div.f-col-multiple div.c-input input[type="text"]:focus,
+                div.container-account div.col1 div.form-container div.form-container-inner div.f-row div.f-col-multiple div.c-input input[type="password"]:focus,
+                div.container-account div.col1 div.form-container div.form-container-inner div.f-row div.f-col-multiple div.c-input input[type="email"]:focus {
+                  border-color: #0366d6;
+                  background-color: white; }
+              div.container-account div.col1 div.form-container div.form-container-inner div.f-row div.f-col-multiple div.c-input button {
+                position: relative;
+                display: inline-block;
+                overflow: hidden;
+                padding: 15px 25px;
+                font-size: 14px;
+                font-weight: 400;
+                text-align: center;
+                border: 1px solid transparent;
+                border-radius: 4px;
+                color: white;
+                -webkit-transition: all .3s ease-in;
+                -o-transition: all .3s ease-in;
+                transition: all .3s ease-in; }
+                div.container-account div.col1 div.form-container div.form-container-inner div.f-row div.f-col-multiple div.c-input button.btnCancel {
+                  color: #f16666;
+                  background-color: white;
+                  font-weight: bold; }
+                div.container-account div.col1 div.form-container div.form-container-inner div.f-row div.f-col-multiple div.c-input button.btnOk {
+                  background-color: #1944A0; }
+            div.container-account div.col1 div.form-container div.form-container-inner div.f-row div.f-col-multiple div.c-buttons {
+              text-align: right; }
+          div.container-account div.col1 div.form-container div.form-container-inner div.f-row div.f-col {
+            width: 50%; }
+            @media all and (max-width: 1165px) {
+              div.container-account div.col1 div.form-container div.form-container-inner div.f-row div.f-col {
+                width: 100%; } }
+            div.container-account div.col1 div.form-container div.form-container-inner div.f-row div.f-col div.c-input {
+              position: relative; }
+              div.container-account div.col1 div.form-container div.form-container-inner div.f-row div.f-col div.c-input.c-required::before {
+                position: absolute;
+                content: '(*)';
+                right: 0;
+                top: 4px;
+                color: #bfd0dd;
+                font-family: "Open Sans";
+                font-size: 10px; }
+              div.container-account div.col1 div.form-container div.form-container-inner div.f-row div.f-col div.c-input label {
+                display: block;
+                font-weight: bold;
+                font-family: "Open Sans";
+                font-size: 14px;
+                padding-bottom: 8px; }
+              div.container-account div.col1 div.form-container div.form-container-inner div.f-row div.f-col div.c-input input[type="text"],
+              div.container-account div.col1 div.form-container div.form-container-inner div.f-row div.f-col div.c-input input[type="password"],
+              div.container-account div.col1 div.form-container div.form-container-inner div.f-row div.f-col div.c-input input[type="email"] {
+                display: block;
+                width: 100%;
+                padding: 13px 15px;
+                border-radius: 3px;
+                border: 1px solid #D0DCE6;
+                background-color: #fbfbfb;
+                font-size: 14px;
+                -webkit-transition: all .5s ease-in-out;
+                -o-transition: all .5s ease-in-out;
+                transition: all .5s ease-in-out; }
+                div.container-account div.col1 div.form-container div.form-container-inner div.f-row div.f-col div.c-input input[type="text"]:focus,
+                div.container-account div.col1 div.form-container div.form-container-inner div.f-row div.f-col div.c-input input[type="password"]:focus,
+                div.container-account div.col1 div.form-container div.form-container-inner div.f-row div.f-col div.c-input input[type="email"]:focus {
+                  border-color: #0366d6;
+                  background-color: white; }
+          div.container-account div.col1 div.form-container div.form-container-inner div.f-row div.f-col1 {
+            padding-right: 10px; }
+            @media all and (max-width: 1165px) {
+              div.container-account div.col1 div.form-container div.form-container-inner div.f-row div.f-col1 {
+                padding-right: 0px; } }
+          div.container-account div.col1 div.form-container div.form-container-inner div.f-row div.f-col2 {
+            padding-left: 10px; }
+            @media all and (max-width: 1165px) {
+              div.container-account div.col1 div.form-container div.form-container-inner div.f-row div.f-col2 {
+                padding-left: 0px;
+                margin-top: 18px; } }
+        div.container-account div.col1 div.form-container div.form-container-inner div.f-row:last-child {
+          margin-bottom: 0px; }
+        div.container-account div.col1 div.form-container div.form-container-inner div.f-row-separator {
+          position: relative;
+          width: 100%;
+          height: 33px;
+          margin-bottom: 14px; }
+          div.container-account div.col1 div.form-container div.form-container-inner div.f-row-separator:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 1px;
+            top: 50%;
+            left: 0;
+            margin-top: -0.5px;
+            background-color: #D0DCE6; }
+  div.container-account div.col2 {
+    background-image: url(../images/common/pattern.png);
+    background-attachment: fixed; }
+    div.container-account div.col2 img {
+      width: 80%; }

@@ -19,203 +19,240 @@ div.container-account{
 	min-height: 100%;
 	height: auto;
 	overflow: hidden;
-	padding: 100px 0px;
-
-	background-color: $color_blue;
-	background-image: url(../images/common/pattern.png);
-
-	justify-content: center;
-	align-items: center;
 
 	@media all and (max-width: 550px){
 		background-size: 170px;
 	}
 
-	div.form-container{
-		position: relative;
-		display: block;
-		max-width: 800px;
-		width: 80%;
-		height: auto;
-		background-color: white;
-		z-index: 2;
+	div.col1,
+	div.col2{
+		width: 50%;
+		min-height: 100vh;
+	}
 
-		&:before{
-			content: '';
-			position: absolute;
-			width: 244px;
-			height: 100%;
-			right: 0;
-			top: 0;
-			background-image: url(../images/index/svg-lat.png);
-			background-size: 244px 1200px;
-			background-repeat: no-repeat;
-			z-index: 1;
+	div.col1{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		background-color: $color_blueDark;
+		padding: 40px 0px;
 
-			@media all and (max-width: 880px){
-				display: none;
+		justify-content: center;
+
+		div.form-container{
+			position: relative;
+			display: block;
+			max-width: 550px;
+			width: 80%;
+			height: auto;
+			background-color: white;
+			z-index: 2;
+			border-radius: 8px;
+
+			div.form-container-inner{
+				width: 100%;
+				padding: 40px 40px 40px 40px;
+
+				// img.logo{
+				// 	display: block;
+				// 	width: 100%;
+				// 	max-width: 260px;
+				// 	margin: 0 auto;
+				// 	padding: 40px 0px 50px;
+				// }
+
+				div.f-row{
+					display: -webkit-flex;
+					display: -moz-flex;
+					display: -ms-flex;
+					display: -o-flex;
+					display: flex;
+					width: 100%;
+					margin-bottom: 18px;
+
+					@media all and (max-width: 1165px){
+						flex-wrap: wrap;
+					}
+
+					div.f-col-multiple{
+						width: 100%;
+
+						div.c-input{
+							position: relative;
+
+							&.c-required{
+
+								&::before{
+									position: absolute;
+									content: '(*)';
+									right: 0;
+									top: 4px;
+									color: darken($color_border, 5);
+									font-family: $f_OS;
+									font-size: 10px;
+								}
+							}
+
+							label{
+								display: block;
+								font-weight: bold;
+								font-family: $f_OS;
+								font-size: 14px;
+								padding-bottom: 8px;
+							}
+
+							input[type="text"],
+				  			input[type="password"],
+				  			input[type="email"]{
+				  				display: block;
+				  				width: 100%;
+				  				padding: 13px 15px;
+				  				border-radius: 3px;
+				  				border: 1px solid $color_border;
+				  				background-color: $color_inputbg;
+				  				font-size: 14px;
+
+				  				transition: all .5s ease-in-out;
+
+				  				&:focus{
+				  					border-color: $color_focus;
+				  					background-color: white;
+				  				}
+				  			}
+
+				  			button{
+				  				position: relative;
+				  				display: inline-block;
+							    overflow: hidden;
+							    padding: 15px 25px;
+							    font-size: 14px;
+							    font-weight: 400;
+							    text-align: center;
+							    border: 1px solid transparent;
+							    border-radius: 4px;
+							    color: white;
+							    transition: all .3s ease-in;
+
+				  				&.btnCancel{
+				  					color: #f16666;
+				  					background-color: white;
+				  					font-weight: bold;
+				  				}
+
+				  				&.btnOk{
+				  					background-color: $color_blue;
+				  				}
+				  			}
+						}
+
+						div.c-buttons{
+							text-align: right;
+						}
+					}
+
+					div.f-col{
+						width: 50%;
+
+						@media all and (max-width: 1165px){
+							width: 100%;
+						}
+
+						div.c-input{
+							position: relative;
+
+							&.c-required{
+
+								&::before{
+									position: absolute;
+									content: '(*)';
+									right: 0;
+									top: 4px;
+									color: darken($color_border, 5);
+									font-family: $f_OS;
+									font-size: 10px;
+								}
+							}
+
+							label{
+								display: block;
+								font-weight: bold;
+								font-family: $f_OS;
+								font-size: 14px;
+								padding-bottom: 8px;
+							}
+
+							input[type="text"],
+				  			input[type="password"],
+				  			input[type="email"]{
+				  				display: block;
+				  				width: 100%;
+				  				padding: 13px 15px;
+				  				border-radius: 3px;
+				  				border: 1px solid $color_border;
+				  				background-color: $color_inputbg;
+				  				font-size: 14px;
+
+				  				transition: all .5s ease-in-out;
+
+				  				&:focus{
+				  					border-color: $color_focus;
+				  					background-color: white;
+				  				}
+				  			}
+						}
+					}
+
+					div.f-col1{
+						padding-right: 10px;
+
+						@media all and (max-width: 1165px){
+							padding-right: 0px;
+						}
+					}
+
+					div.f-col2{
+						padding-left: 10px;
+
+						@media all and (max-width: 1165px){
+							padding-left: 0px;
+							margin-top: 18px;
+						}
+					}
+				}
+
+				div.f-row:last-child{
+					margin-bottom: 0px;
+				}
+
+				div.f-row-separator{
+					position: relative;
+					width: 100%;
+					height: 33px;
+					margin-bottom: 14px;
+
+					&:before{
+						content: '';
+						position: absolute;
+						width: 100%;
+						height: 1px;
+						top: 50%;
+						left: 0;
+						margin-top: -0.5px;
+						background-color: $color_border;
+					}
+				}
 			}
 		}
+	}
 
-		div.form-container-inner{
-			width: calc(100% - 244px);
-			padding: 40px 0px 40px 40px;
+	div.col2{
+		background-image: url(../images/common/pattern.png);
+		background-attachment: fixed;
 
-			div.f-row{
-				display: -webkit-flex;
-				display: -moz-flex;
-				display: -ms-flex;
-				display: -o-flex;
-				display: flex;
-				width: 100%;
-				margin-bottom: 18px;
-
-				div.f-col-multiple{
-					width: 100%;
-
-					div.c-input{
-						position: relative;
-
-						&.c-required{
-
-							&::before{
-								position: absolute;
-								content: '(*)';
-								right: 0;
-								top: 4px;
-								color: darken($color_border, 5);
-								font-family: $f_OS;
-								font-size: 10px;
-							}
-						}
-
-						label{
-							display: block;
-							font-weight: bold;
-							font-family: $f_OS;
-							font-size: 14px;
-							padding-bottom: 8px;
-						}
-
-						input[type="text"],
-			  			input[type="password"],
-			  			input[type="email"]{
-			  				display: block;
-			  				width: 100%;
-			  				padding: 13px 15px;
-			  				border-radius: 3px;
-			  				border: 1px solid $color_border;
-			  				background-color: $color_inputbg;
-			  				font-size: 14px;
-
-			  				transition: all .5s ease-in-out;
-
-			  				&:focus{
-			  					border-color: $color_focus;
-			  					background-color: white;
-			  				}
-			  			}
-
-			  			button{
-			  				position: relative;
-			  				display: inline-block;
-						    overflow: hidden;
-						    padding: 15px 25px;
-						    font-size: 14px;
-						    font-weight: 400;
-						    text-align: center;
-						    border: 1px solid transparent;
-						    border-radius: 4px;
-						    color: white;
-						    transition: all .3s ease-in;
-
-			  				&.btnCancel{
-			  					color: #f16666;
-			  					background-color: white;
-			  					font-weight: bold;
-			  				}
-
-			  				&.btnOk{
-			  					background-color: $color_blue;
-			  				}
-			  			}
-					}
-				}
-
-				div.f-col{
-					width: 50%;
-
-					div.c-input{
-						position: relative;
-
-						&.c-required{
-
-							&::before{
-								position: absolute;
-								content: '(*)';
-								right: 0;
-								top: 4px;
-								color: darken($color_border, 5);
-								font-family: $f_OS;
-								font-size: 10px;
-							}
-						}
-
-						label{
-							display: block;
-							font-weight: bold;
-							font-family: $f_OS;
-							font-size: 14px;
-							padding-bottom: 8px;
-						}
-
-						input[type="text"],
-			  			input[type="password"],
-			  			input[type="email"]{
-			  				display: block;
-			  				width: 100%;
-			  				padding: 13px 15px;
-			  				border-radius: 3px;
-			  				border: 1px solid $color_border;
-			  				background-color: $color_inputbg;
-			  				font-size: 14px;
-
-			  				transition: all .5s ease-in-out;
-
-			  				&:focus{
-			  					border-color: $color_focus;
-			  					background-color: white;
-			  				}
-			  			}
-					}
-				}
-
-				div.f-col1{
-					padding-right: 10px;
-				}
-
-				div.f-col2{
-					padding-left: 10px;
-				}
-			}
-
-			div.f-row-separator{
-				position: relative;
-				width: 100%;
-				height: 33px;
-				margin-bottom: 14px;
-
-				&:before{
-					content: '';
-					position: absolute;
-					width: 100%;
-					height: 1px;
-					top: 50%;
-					left: 0;
-					margin-top: -0.5px;
-					background-color: $color_border;
-				}
-			}
+		img{
+			width: 80%;
 		}
 	}
 }

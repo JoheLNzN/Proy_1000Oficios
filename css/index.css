@@ -236,19 +236,19 @@ div.c-col2 {
           text-decoration: underline; }
       div.c-col2 div.form-container div.c-input.c-input:last-child {
         margin-bottom: 0px; }
-      div.c-col2 div.form-container div.c-input.c-input-cc {
+      div.c-col2 div.form-container div.c-input.c-input-cc, div.c-col2 div.form-container div.c-input.c-input-is {
         position: relative;
         display: block;
         margin-top: 15px;
         text-align: center !important; }
-        div.c-col2 div.form-container div.c-input.c-input-cc a {
+        div.c-col2 div.form-container div.c-input.c-input-cc a, div.c-col2 div.form-container div.c-input.c-input-is a {
           position: relative !important;
           display: inline-block;
           font-weight: bold;
           font-family: "Open Sans";
           font-size: 13px;
           color: #0366d6; }
-          div.c-col2 div.form-container div.c-input.c-input-cc a:before, div.c-col2 div.form-container div.c-input.c-input-cc a:after {
+          div.c-col2 div.form-container div.c-input.c-input-cc a:before, div.c-col2 div.form-container div.c-input.c-input-cc a:after, div.c-col2 div.form-container div.c-input.c-input-is a:before, div.c-col2 div.form-container div.c-input.c-input-is a:after {
             position: absolute;
             display: block;
             opacity: 0;
@@ -258,16 +258,16 @@ div.c-col2 {
             font-size: 16px;
             font-size: lighter;
             top: -3px; }
-          div.c-col2 div.form-container div.c-input.c-input-cc a:before {
+          div.c-col2 div.form-container div.c-input.c-input-cc a:before, div.c-col2 div.form-container div.c-input.c-input-is a:before {
             content: '[';
             left: 10px; }
-          div.c-col2 div.form-container div.c-input.c-input-cc a:after {
+          div.c-col2 div.form-container div.c-input.c-input-cc a:after, div.c-col2 div.form-container div.c-input.c-input-is a:after {
             content: ']';
             right: 10px; }
-          div.c-col2 div.form-container div.c-input.c-input-cc a:hover:before {
+          div.c-col2 div.form-container div.c-input.c-input-cc a:hover:before, div.c-col2 div.form-container div.c-input.c-input-is a:hover:before {
             left: -15px;
             opacity: 1; }
-          div.c-col2 div.form-container div.c-input.c-input-cc a:hover:after {
+          div.c-col2 div.form-container div.c-input.c-input-cc a:hover:after, div.c-col2 div.form-container div.c-input.c-input-is a:hover:after {
             right: -15px;
             opacity: 1; }
       @media all and (max-width: 550px) {
