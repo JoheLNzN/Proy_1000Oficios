@@ -11,113 +11,126 @@
 </head>
 <body>
 
+	<header>
+		<img src="images/common/logo.png" alt="">
+	</header>
+
 	<div class="container-account">
 
-		<div class="col1">
-			<div class="form-container">
-				<div class="form-container-inner">
+		<div class="form-container">
 
-					<div class="f-row">
-						<div class="f-col-multiple">
-							<div class="c-input c-required">
-								<label for="txtEmail">Correo electrónico</label>
-								<input type="email" id="txtEmail" class="input"/>
-							</div><!--c-input-->
-						</div><!--f-col1-->
-					</div><!--f-row-->
+			<img class="worker-left" src="images/register/worker_left.png" alt="">
+			<img class="worker-right" src="images/register/worker_right.png" alt="">
 
-					<div class="f-row">
-						
-						<div class="f-col f-col1">
-							<div class="c-input c-required">
-								<label for="txtPassword">Contraseña</label>
-								<input type="password" id="txtPassword" class="input"/>
-							</div><!--c-input-->
-						</div><!--f-col2-->
-						<div class="f-col f-col2">
-							<div class="c-input c-required">
-								<label for="txtConfirmPassword">Confirmar contraseña</label>
-								<input type="password" id="txtConfirmPassword" class="input"/>
-							</div><!--c-input-->
-						</div><!--f-col2-->
+			<div class="form-container-inner">
 
-					</div><!--f-row-->
+				<div class="f-row">
+					<div class="f-col-multiple">
+						<div class="c-input c-required">
+							<label for="txtEmail">Correo electrónico</label>
+							<input type="email" id="txtEmail" class="input" maxlength="50" />
+						</div><!--c-input-->
+					</div><!--f-col1-->
+				</div><!--f-row-->
 
-					<div class="f-row-separator"></div><!--f-row-separator-->
+				<div class="f-row">
+					
+					<div class="f-col f-col1">
+						<div class="c-input c-required">
+							<label for="txtPassword">Contraseña</label>
+							<input type="password" id="txtPassword" class="input" maxlength="8" />
+						</div><!--c-input-->
+					</div><!--f-col2-->
+					<div class="f-col f-col2">
+						<div class="c-input c-required">
+							<label for="txtConfirmPassword">Confirmar contraseña</label>
+							<input type="password" id="txtConfirmPassword" class="input" maxlength="8" />
+						</div><!--c-input-->
+					</div><!--f-col2-->
 
-					<div class="f-row">
-						<div class="f-col-multiple">
-							<div class="c-input c-required">
-								<label for="txtName">Nombre</label>
-								<input type="text" id="txtName" class="input"/>
-							</div><!--c-input-->
-						</div><!--f-col1-->
-					</div><!--f-row-->
+				</div><!--f-row-->
 
-					<div class="f-row">
-						<div class="f-col f-col1">
-							<div class="c-input c-required">
-								<label for="txtLastnameP">Apellido Paterno</label>
-								<input type="text" id="txtLastnameP" class="input"/>
-							</div><!--c-input-->
-						</div><!--f-col2-->
-						<div class="f-col f-col2">
-							<div class="c-input c-required">
-								<label for="txtLastnameM">Apellido Materno</label>
-								<input type="text" id="txtLastnameM" class="input"/>
-							</div><!--c-input-->
-						</div><!--f-col2-->
-					</div><!--f-row-->
+				<div class="f-row-separator"></div><!--f-row-separator-->
 
-					<div class="f-row">
-						<div class="f-col f-col1">
-							<div class="c-input c-required">
-								<label for="txtDni">Dni</label>
-								<input type="text" id="txtDni" class="input"/>
-							</div><!--c-input-->
-						</div><!--f-col2-->
-						<div class="f-col f-col2">
-							<div class="c-input">
-								<label for="txtCelular">Celular</label>
-								<input type="text" id="txtCelular" class="input"/>
-							</div><!--c-input-->
-						</div><!--f-col2-->
-					</div><!--f-row-->
+				<div class="f-row">
+					<div class="f-col-multiple">
+						<div class="c-input c-required">
+							<label for="txtName">Nombre</label>
+							<input type="text" id="txtName" class="input" maxlength="20" />
+						</div><!--c-input-->
+					</div><!--f-col1-->
+				</div><!--f-row-->
 
-					<div class="f-row">
-						<div class="f-col f-col1">
-							<div class="c-input">
-								<label for="txtBirthdate">Fecha de Nacimiento</label>
-								<input type="text" id="txtBirthdate" class="input" />
-							</div><!--c-input-->
-						</div><!--f-col2-->
-						<div class="f-col f-col2">
-							
-						</div><!--f-col2-->
-					</div><!--f-row-->
+				<div class="f-row">
+					<div class="f-col f-col1">
+						<div class="c-input c-required">
+							<label for="txtLastnameP">Apellido Paterno</label>
+							<input type="text" id="txtLastnameP" class="input" maxlength="20" />
+						</div><!--c-input-->
+					</div><!--f-col2-->
+					<div class="f-col f-col2">
+						<div class="c-input c-required">
+							<label for="txtLastnameM">Apellido Materno</label>
+							<input type="text" id="txtLastnameM" class="input" maxlength="20" />
+						</div><!--c-input-->
+					</div><!--f-col2-->
+				</div><!--f-row-->
 
-					<div class="f-row-separator"></div><!--f-row-separator-->
+				<div class="f-row">
+					<div class="f-col f-col1">
+						<div class="c-input c-required">
+							<label for="txtDni">Dni</label>
+							<input type="text" id="txtDni" class="input" maxlength="8" />
+						</div><!--c-input-->
+					</div><!--f-col2-->
+					<div class="f-col f-col2">
+						<div class="c-input">
+							<label for="txtCelular">Celular</label>
+							<input type="text" id="txtCelular" class="input" maxlength="9"/>
+						</div><!--c-input-->
+					</div><!--f-col2-->
+				</div><!--f-row-->
 
-					<div class="f-row">
-						<div class="f-col-multiple">
-							<div class="c-input c-buttons">
-								<button class="btnCancel">Iniciar Sesión</button>
-								<button class="btnOk">Aceptar</button>
-							</div>
-						</div><!--f-col-multiple-->
-					</div><!--f-row-->
+				<div class="f-row">
+					<div class="f-col f-col1">
+						<div class="c-input">
+							<label for="txtBirthdate">Fecha de Nacimiento</label>
+							<input type="text" id="txtBirthdate" class="input" readonly="true" />
+						</div><!--c-input-->
+					</div><!--f-col2-->
+					<div class="f-col f-col2"></div><!--f-col2-->
+				</div><!--f-row-->
 
-				</div><!--form-container-inner-->
-			</div><!--form-container-->
-		</div><!--col1-->
+				<div class="f-row-separator"></div><!--f-row-separator-->
 
-		<div class="col2">
-			<img src="images/register/workers.png" alt="">
-		</div><!--col2-->
+				<div class="f-row">
+					<div class="f-col-multiple">
+						<div class="c-input c-buttons">
+							<button class="btnCancel">Iniciar Sesión</button>
+							<button class="btnOk">Aceptar</button>
+						</div>
+					</div><!--f-col-multiple-->
+				</div><!--f-row-->
+
+			</div><!--form-container-inner-->
+
+			<div class="form-shadow"></div><!--form-shadow-->
+		</div><!--form-container-->
 		
 	</div><!--container-account-->
 
-	<script src="js/jquery-3.3.1.min.js"></script>
+	<footer>
+		<img src="images/index/fast-work.png" alt="">
+		<div class="footer-cderechos">
+			<div class="footer-cderechos-svg-top"></div><!--footer-cderechos-svg-top-->
+			<div class="fcderechos-inner">
+				<span>Copyright 2019 © Todos los Derechos Reservados.</span>
+				<span>Proyecto de <a>Taller de Proyecto I</a></span>
+			</div><!--fcderechos-inner-->
+		</div><!--footer-cderechos-->
+	</footer>
+
+	<script src="js/libraries/jquery-3.3.1.min.js"></script>
 	<script src="js/all.js"></script>
 	<script src="js/register.js"></script>
 </body>

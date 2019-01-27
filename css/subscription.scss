@@ -97,30 +97,6 @@ div.container-account{
 		    }
 		}
 
-		img.worker-left,
-		img.worker-right{
-			position: absolute;
-			display: block;
-			width: auto;
-			height: 590px;
-			z-index: 10;
-			bottom: 0;
-			top: 0;
-			margin: auto;
-
-			@media all and (max-width: 960px){
-				display: none;
-			}
-		}
-
-		img.worker-left{
-			left: -197.77px;
-		}
-
-		img.worker-right{
-			right: -179.56px;
-		}
-
 		div.form-container-inner{
 			width: 100%;
 			padding: 40px;

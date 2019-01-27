@@ -7,6 +7,9 @@ $color_border: #D0DCE6;
 $color_inputbg: #F5F7FA;
 
 $f_OS : 'Open Sans';
+$f_RO: 'Roboto Condensed';
+
+$max-width: 1200px;
 
 div.container-index{
 	display: -webkit-flex;
@@ -303,7 +306,7 @@ div.c-col2{
 	  				color: $color_focus;
 
 	  				&:hover{
-	  					
+	  					text-decoration: underline;
 	  				}
 	  			}
 
