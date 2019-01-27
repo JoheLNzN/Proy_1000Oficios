@@ -306,6 +306,18 @@ div.container-account{
 				height: 33px;
 				margin-bottom: 14px;
 
+				span{
+					position: absolute;
+					font-size: 13px;
+					color: darken($color_border, 10);
+					background-color: white;
+					top: 6px;
+					right: 10px;
+					z-index: 10;
+					padding: 0px 8px;
+					font-family: $f_OS;
+				}
+
 				&:before{
 					content: '';
 					position: absolute;

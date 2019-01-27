@@ -11,51 +11,36 @@ $f_RO: 'Roboto Condensed';
 $max-width: 1200px;
 
 header{
-	position: relative;
+	position: absolute;
 	width: 100%;
-	height: 250px;
-	background-color: white;
-	background-image: url(../images/register/bg-header.jpg);
-	background-size: cover;
-	background-position: top center;
-	background-repeat: no-repeat;
-	margin-top: 50px;
+	height: 100px;
+	top: 0;
+	left: 0;
 
-	& > img{
+	&:before{
 		position: absolute;
-		display: block;
-		width: 280px;
-		height: 124px;
-		bottom: -60px;
-		left: 50%;
-		margin-left: -140px;
-		z-index: 80;
-
-		@media all and (max-width: 550px){
-			width: 190px;
-			height: auto;
-			left: 0;
-			right: 0;
-			margin: 0 auto;
-			bottom: 20px;
-		}
+		content: '';
+		width: 100%;
+		height: 400px;
+		top: 0;
+		left: 0;
+		background-image: url(../images/subscription/header.svg);
+		background-size: 133.333333333% 400px;
+		bottom: 0;
+		z-index: 1;
+		transform: rotate(180deg);
 	}
 }
 
-div.container-account{
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
+div.container-subscription{
 	display: flex;
 	position: relative;
 	width: 100%;
 	min-height: 100%;
 	height: auto;
 	overflow: hidden;
-	padding-top: 220px;
+	padding-top: 250px;
 	padding-bottom: 250px;
-	box-shadow: inset 0px 3px 20px rgba(black, .4);
 
 	background-image: url(../images/common/pattern.png);
 
@@ -63,248 +48,434 @@ div.container-account{
 
 	@media all and (max-width: 550px){
 		background-size: 170px;
-		padding-top: 110px;
 	}
 
-	div.form-container{
-		position: relative;
-		display: block;
-		max-width: 500px;
-		width: 90%;
+	@media all and (max-width: 1114px){
+		padding-top: 200px;
+	}
+
+	div.c-subscription-inner{
+		display: flex;
+		width: 100%;
 		height: auto;
-		background-color: white;
-		z-index: 2;
-		border-radius: 8px;
+		max-width: $max-width;
 
-		&:before{
-			display: block;
-			content: 'Registrarse';
-			position: absolute;
-		    right: 0;
-		    top: -44px;
-		    color: $color_blue;
-		    font-weight: bold;
-		    font-size: 15px;
-		    text-transform: uppercase;
-		    font-family: $f_OS;
-		    letter-spacing: .5px;
-		    padding: 8px 18px;
-		    border-radius: 6px;
-		    background-color: $color_yellow;
-
-		    @media all and (max-width: 550px){
-		    	font-size: 14px;
-		    }
+		div.c-col1,
+		div.c-col2{
+			width: 50%;
+			height: auto;
 		}
 
-		div.form-container-inner{
-			width: 100%;
-			padding: 40px;
+		div.c-col1{
+			display: flex;
+			justify-content: center;
 
-			@media all and (max-width: 550px){
-				padding: 40px 30px;
-			}
-
-			div.f-row{
-				display: -webkit-flex;
-				display: -moz-flex;
-				display: -ms-flex;
-				display: -o-flex;
-				display: flex;
+			@media all and (max-width: 966px){
 				width: 100%;
-				margin-bottom: 18px;
-
-				@media all and (max-width: 1165px){
-					flex-wrap: wrap;
-				}
-
-				div.f-col-multiple{
-					width: 100%;
-
-					div.c-input{
-						position: relative;
-
-						&.c-required{
-
-							&::before{
-								position: absolute;
-								content: '(*)';
-								right: 0;
-								top: 4px;
-								color: darken($color_border, 5);
-								font-family: $f_OS;
-								font-size: 10px;
-							}
-						}
-
-						label{
-							display: block;
-							font-weight: bold;
-							font-family: $f_OS;
-							font-size: 13px;
-							padding-bottom: 8px;
-						}
-
-						input{
-							position: relative;
-			  				display: block;
-			  				width: 100%;
-			  				padding: 10px;
-			  				border-radius: 3px;
-			  				border: 1px solid $color_border;
-			  				background-color: $color_inputbg;
-			  				font-size: 13px;
-
-			  				transition: all .5s ease-in-out;
-
-			  				&:focus{
-			  					border-color: $color_focus;
-			  					background-color: white;
-			  				}
-			  			}
-
-			  			button{
-			  				position: relative;
-			  				display: inline-block;
-						    overflow: hidden;
-						    padding: 9px 15px;
-						    font-size: 13px;
-						    font-weight: 400;
-						    text-align: center;
-						    border: 1px solid transparent;
-						    border-radius: 4px;
-						    color: white;
-						    transition: all .3s ease-in;
-
-			  				&.btnCancel{
-			  					color: #f16666;
-			  					background-color: white;
-			  					font-weight: bold;
-
-			  					&:hover{
-			  						color: darken(#f16666, 10);
-			  						text-decoration: underline;
-			  					}
-			  				}
-
-			  				&.btnOk{
-			  					background-color: $color_blue;
-
-			  					&:hover{
-			  						background-color: $color_blueDark;
-			  						color: $color_yellow;
-			  					}
-			  				}
-			  			}
-					}
-
-					div.c-buttons{
-						text-align: right;
-					}
-				}
-
-				div.f-col{
-					width: 50%;
-
-					@media all and (max-width: 1165px){
-						width: 100%;
-					}
-
-					div.c-input{
-						position: relative;
-
-						&.c-required{
-
-							&::before{
-								position: absolute;
-								content: '(*)';
-								right: 0;
-								top: 4px;
-								color: darken($color_border, 5);
-								font-family: $f_OS;
-								font-size: 10px;
-							}
-						}
-
-						label{
-							display: block;
-							font-weight: bold;
-							font-family: $f_OS;
-							font-size: 13px;
-							padding-bottom: 8px;
-						}
-
-						input{
-							position: relative;
-			  				display: block;
-			  				width: 100%;
-			  				padding: 10px;
-			  				border-radius: 3px;
-			  				border: 1px solid $color_border;
-			  				background-color: $color_inputbg;
-			  				font-size: 13px;
-
-			  				transition: all .5s ease-in-out;
-
-			  				&:focus{
-			  					border-color: $color_focus;
-			  					background-color: white;
-			  				}
-			  			}
-					}
-				}
-
-				div.f-col1{
-					padding-right: 10px;
-
-					@media all and (max-width: 1165px){
-						padding-right: 0px;
-					}
-				}
-
-				div.f-col2{
-					padding-left: 10px;
-
-					@media all and (max-width: 1165px){
-						padding-left: 0px;
-						margin-top: 18px;
-					}
-				}
 			}
 
-			div.f-row:last-child{
-				margin-bottom: 0px;
-			}
-
-			div.f-row-separator{
+			div.form-container{
 				position: relative;
-				width: 100%;
-				height: 33px;
-				margin-bottom: 14px;
+				display: block;
+				max-width: 450px;
+				width: 90%;
+				height: auto;
+				background-color: white;
+				z-index: 2;
+				border-radius: 8px;
 
 				&:before{
-					content: '';
+					display: block;
+					content: 'Suscríbete';
+					position: absolute;
+				    right: 0;
+				    top: -44px;
+				    color: $color_blue;
+				    font-weight: bold;
+				    font-size: 15px;
+				    text-transform: uppercase;
+				    font-family: $f_OS;
+				    letter-spacing: .5px;
+				    padding: 8px 18px;
+				    border-radius: 6px;
+				    background-color: $color_yellow;
+
+				    @media all and (max-width: 550px){
+				    	font-size: 14px;
+				    	z-index: 15;
+				    }
+				}
+
+				img.recommend{
+					display: block;
+					position: absolute;
+					left: 5px;
+					top: -180px;
+					width: 300px;
+					z-index: 1;
+
+					@media all and (max-width: 1114px){
+						width: 250px;
+						top: -151px;
+					}
+
+					@media all and (max-width: 550px){
+						width: 260px;
+						top: -158px;
+					}
+				}
+
+				img.logo{
+					position: relative;
+					display: none;
+					margin: 80px auto 10px;
+					width: 200px;
+
+					@media all and (max-width: 550px){
+						display: block;
+					}
+				}
+
+				div.form-container-inner{
+					width: 100%;
+					padding: 40px;
+
+					@media all and (max-width: 550px){
+						padding: 40px 30px;
+					}
+
+					div.f-row{
+						display: -webkit-flex;
+						display: -moz-flex;
+						display: -ms-flex;
+						display: -o-flex;
+						display: flex;
+						width: 100%;
+						margin-bottom: 18px;
+
+						@media all and (max-width: 1165px){
+							flex-wrap: wrap;
+						}
+
+						div.f-col-multiple{
+							width: 100%;
+
+							div.c-input{
+								position: relative;
+
+								&.c-required{
+
+									&::before{
+										position: absolute;
+										content: '(*)';
+										right: 0;
+										top: 4px;
+										color: darken($color_border, 5);
+										font-family: $f_OS;
+										font-size: 10px;
+									}
+								}
+
+								label{
+									display: block;
+									font-weight: bold;
+									font-family: $f_OS;
+									font-size: 13px;
+									padding-bottom: 8px;
+								}
+
+								input{
+									position: relative;
+					  				display: block;
+					  				width: 100%;
+					  				padding: 10px;
+					  				border-radius: 3px;
+					  				border: 1px solid $color_border;
+					  				background-color: $color_inputbg;
+					  				font-size: 13px;
+
+					  				transition: all .5s ease-in-out;
+
+					  				&:focus{
+					  					border-color: $color_focus;
+					  					background-color: white;
+					  				}
+					  			}
+
+					  			button{
+					  				position: relative;
+					  				display: inline-block;
+								    overflow: hidden;
+								    padding: 9px 15px;
+								    font-size: 13px;
+								    font-weight: 400;
+								    text-align: center;
+								    border: 1px solid transparent;
+								    border-radius: 4px;
+								    color: white;
+								    transition: all .3s ease-in;
+								    background-color: $color_blue;
+
+								    &:hover{
+								    	background-color: $color_blueDark;
+								    	color: $color_yellow;
+					  				}
+					  			}
+
+					  			div.c-plan{
+
+					  				ul.list-plans{
+					  					display: flex;
+					  					list-style: none;
+
+					  					justify-content: center;
+					  					flex-wrap: wrap;
+
+					  					li{
+					  						display: block;
+					  						width: 170px;
+					  						height: auto;
+					  						margin: 6px;
+					  						border: 2px solid #d0dce6;
+					  						border-radius: 6px;
+					  						text-align: center;
+
+					  						transition: all .3s ease-in-out;
+
+					  						@media all and (max-width: 1114px){
+					  							width: 130px;
+					  						}
+
+					  						@media all and (max-width: 966px){
+					  							width: 170px;
+					  						}
+
+					  						@media all and (max-width: 550px){
+					  							width: 100%;
+					  						}
+
+					  						&.selected{
+					  							border-color: $color_focus;
+					  							cursor: pointer;
+
+					  							span.type-plan{
+					  								background-color: $color_focus;
+					  								color: white;
+					  							}
+
+					  							span.current-price{
+					  								color: $color_focus;
+					  							}
+					  						}
+
+					  						&:hover{
+					  							border-color: $color_focus;
+					  							cursor: pointer;
+
+					  							span.type-plan{
+					  								background-color: $color_focus;
+					  								color: white;
+					  							}
+
+					  							span.current-price{
+					  								color: $color_focus;
+					  							}
+					  						}
+
+					  						span{
+					  							font-family: $f_RO;
+					  							display: block;
+					  							transition: all .3s ease-in-out;
+					  						}
+
+					  						span.type-plan{
+					  							padding: 15px;
+					  							background-color: #d0dce6;
+					  							color: #222;
+					  							font-size: 24px;
+					  							font-weight: bold;
+					  							letter-spacing: -0.5px;
+					  							margin-bottom: 5px;
+
+					  							@media all and (max-width: 550px){
+					  								font-size: 21px;
+					  							}
+					  						}
+
+					  						span.old-price{
+					  							color: #afc3d4;
+					  							font-size: 14px;
+					  							padding-top: 2px;
+					  							padding-bottom: 15px;
+
+					  							@media all and (max-width: 550px){
+					  								font-size: 13px;
+					  							}
+
+					  							i{
+					  								font-family: $f_RO;
+					  								font-style: normal;
+					  								font-size: 14px;
+					  								text-decoration: line-through;
+					  							}
+
+					  						}
+
+					  						span.current-price{
+					  							padding-top: 10px;
+					  							font-size: 25px;
+					  							font-weight: lighter;
+
+					  							@media all and (max-width: 550px){
+					  								font-size: 21px;
+					  							}
+					  						}
+					  					}
+					  				}
+					  			}
+							}
+
+							div.c-buttons{
+								text-align: right;
+							}
+						}
+
+						div.f-col{
+							width: 50%;
+
+							@media all and (max-width: 1165px){
+								width: 100%;
+							}
+
+							div.c-input{
+								position: relative;
+
+								&.c-required{
+
+									&::before{
+										position: absolute;
+										content: '(*)';
+										right: 0;
+										top: 4px;
+										color: darken($color_border, 5);
+										font-family: $f_OS;
+										font-size: 10px;
+									}
+								}
+
+								label{
+									display: block;
+									font-weight: bold;
+									font-family: $f_OS;
+									font-size: 13px;
+									padding-bottom: 8px;
+								}
+
+								input{
+									position: relative;
+					  				display: block;
+					  				width: 100%;
+					  				padding: 10px;
+					  				border-radius: 3px;
+					  				border: 1px solid $color_border;
+					  				background-color: $color_inputbg;
+					  				font-size: 13px;
+
+					  				transition: all .5s ease-in-out;
+
+					  				&:focus{
+					  					border-color: $color_focus;
+					  					background-color: white;
+					  				}
+					  			}
+							}
+						}
+
+						div.f-col1{
+							padding-right: 10px;
+
+							@media all and (max-width: 1165px){
+								padding-right: 0px;
+							}
+						}
+
+						div.f-col2{
+							padding-left: 10px;
+
+							@media all and (max-width: 1165px){
+								padding-left: 0px;
+								margin-top: 18px;
+							}
+						}
+					}
+
+					div.f-row:last-child{
+						margin-bottom: 0px;
+					}
+
+					div.f-row-separator{
+						position: relative;
+						width: 100%;
+						height: 33px;
+						margin-bottom: 14px;
+
+						span{
+							position: absolute;
+							font-size: 13px;
+							color: darken($color_border, 10);
+							background-color: white;
+							top: 6px;
+							right: 10px;
+							z-index: 10;
+							padding: 0px 8px;
+						}
+
+						&:before{
+							content: '';
+							position: absolute;
+							width: 100%;
+							height: 1px;
+							top: 50%;
+							left: 0;
+							margin-top: -0.5px;
+							background-color: $color_border;
+						}
+					}
+				}
+
+				div.form-shadow{
+					display: block;
 					position: absolute;
 					width: 100%;
-					height: 1px;
-					top: 50%;
+					height: 46px;
+					bottom: -46px;
+					background-image: url(../images/common/shadow.png);
+					background-repeat: no-repeat;
+					background-size: 100% auto;
 					left: 0;
-					margin-top: -0.5px;
-					background-color: $color_border;
 				}
 			}
 		}
 
-		div.form-shadow{
-			display: block;
-			position: absolute;
-			width: 100%;
-			height: 46px;
-			bottom: -46px;
-			background-image: url(../images/common/shadow.png);
-			background-repeat: no-repeat;
-			background-size: 100% auto;
-			left: 0;
+		div.c-col2{
+			display: flex;
+
+			justify-content: center;
+			align-items: center;
+
+			@media all and (max-width: 966px){
+				display: none;
+			}
+			
+			img{
+				display: block;
+				width: 530px;
+				height: auto;
+
+				@media all and (max-width: 1200px){
+					width: 430px;
+				}
+			}
 		}
 	}
 }

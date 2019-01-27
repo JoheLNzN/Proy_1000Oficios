@@ -11,110 +11,110 @@
 </head>
 <body>
 
-	<header>
-		<img src="images/common/logo.png" alt="">
-	</header>
+	<header></header>
 
-	<div class="container-account">
+	<div class="container-subscription">
 
-		<div class="form-container">
+		<div class="c-subscription-inner">
+			<div class="c-col1">
+				<div class="form-container">
+					<img src="images/subscription/recommend.png" class="recommend" alt="">
 
-			<div class="form-container-inner">
+					<img class="logo" src="images/common/logo.png" alt="">
 
-				<div class="f-row">
-					<div class="f-col-multiple">
-						<div class="c-input c-required">
-							<label for="txtEmail">Correo electrónico</label>
-							<input type="email" id="txtEmail" class="input"/>
-						</div><!--c-input-->
-					</div><!--f-col1-->
-				</div><!--f-row-->
+					<div class="form-container-inner">
 
-				<div class="f-row">
-					
-					<div class="f-col f-col1">
-						<div class="c-input c-required">
-							<label for="txtPassword">Contraseña</label>
-							<input type="password" id="txtPassword" class="input"/>
-						</div><!--c-input-->
-					</div><!--f-col2-->
-					<div class="f-col f-col2">
-						<div class="c-input c-required">
-							<label for="txtConfirmPassword">Confirmar contraseña</label>
-							<input type="password" id="txtConfirmPassword" class="input"/>
-						</div><!--c-input-->
-					</div><!--f-col2-->
+						<div class="f-row">
+							<div class="f-col-multiple">
+								<div class="c-input c-required">
+									<label>Tipo de Plan</label>
+									<div class="c-plan">
+										<ul class="list-plans">
+											<li>
+												<span class="type-plan">1 Mes</span>
+												<span class="current-price">S/. 30</span>
+												<span class="old-price">Antes <i>S/. 30</i></span>
+											</li>
+											<li>
+												<span class="type-plan">3 Meses</span>
+												<span class="current-price">S/. 72</span>
+												<span class="old-price">Antes <i>S/. 90</i></span>
+											</li>
+											<li>
+												<span class="type-plan">6 Meses</span>
+												<span class="current-price">S/. 108</span>
+												<span class="old-price">Antes <i>S/. 180</i></span>
+											</li>
+											<li>
+												<span class="type-plan">1 Año</span>
+												<span class="current-price">S/. 201</span>
+												<span class="old-price">Antes <i>S/. 365</i></span>
+											</li>
+										</ul>
+									</div><!---->
+								</div><!--c-input-->
+							</div><!--f-col1-->
+						</div><!--f-row-->
 
-				</div><!--f-row-->
+						<div class="f-row-separator">
+							<span>Datos de la Tarjeta</span>
+						</div><!--f-row-separator-->
 
-				<div class="f-row-separator"></div><!--f-row-separator-->
+						<div class="f-row">
+							<div class="f-col-multiple">
+								<div class="c-input c-required">
+									<label for="txtCardNumber">Número de Tarjeta</label>
+									<input type="email" id="txtCardNumber" class="input"/>
+								</div><!--c-input-->
+							</div><!--f-col1-->
+						</div><!--f-row-->
 
-				<div class="f-row">
-					<div class="f-col-multiple">
-						<div class="c-input c-required">
-							<label for="txtName">Nombre</label>
-							<input type="text" id="txtName" class="input"/>
-						</div><!--c-input-->
-					</div><!--f-col1-->
-				</div><!--f-row-->
+						<div class="f-row">
+							<div class="f-col f-col1">
+								<div class="c-input c-required">
+									<label for="txtExpiryMonth">Mes Vencimiento</label>
+									<input type="text" id="txtExpiryMonth" class="input"/>
+								</div><!--c-input-->
+							</div><!--f-col2-->
+							<div class="f-col f-col2">
+								<div class="c-input c-required">
+									<label for="txtExpiryYear">Año Vencimiento</label>
+									<input type="text" id="txtExpiryYear" class="input"/>
+								</div><!--c-input-->
+							</div><!--f-col2-->
+						</div><!--f-row-->
 
-				<div class="f-row">
-					<div class="f-col f-col1">
-						<div class="c-input c-required">
-							<label for="txtLastnameP">Apellido Paterno</label>
-							<input type="text" id="txtLastnameP" class="input"/>
-						</div><!--c-input-->
-					</div><!--f-col2-->
-					<div class="f-col f-col2">
-						<div class="c-input c-required">
-							<label for="txtLastnameM">Apellido Materno</label>
-							<input type="text" id="txtLastnameM" class="input"/>
-						</div><!--c-input-->
-					</div><!--f-col2-->
-				</div><!--f-row-->
+						<div class="f-row">
+							<div class="f-col-multiple">
+								<div class="c-input c-required">
+									<label for="txtSecurityCode">Código de Seguridad</label>
+									<input type="email" id="txtSecurityCode" class="input"/>
+								</div><!--c-input-->
+							</div><!--f-col1-->
+						</div><!--f-row-->
 
-				<div class="f-row">
-					<div class="f-col f-col1">
-						<div class="c-input c-required">
-							<label for="txtDni">Dni</label>
-							<input type="text" id="txtDni" class="input"/>
-						</div><!--c-input-->
-					</div><!--f-col2-->
-					<div class="f-col f-col2">
-						<div class="c-input">
-							<label for="txtCelular">Celular</label>
-							<input type="text" id="txtCelular" class="input"/>
-						</div><!--c-input-->
-					</div><!--f-col2-->
-				</div><!--f-row-->
 
-				<div class="f-row">
-					<div class="f-col f-col1">
-						<div class="c-input">
-							<label for="txtBirthdate">Fecha de Nacimiento</label>
-							<input type="text" id="txtBirthdate" class="input" readonly="true" />
-						</div><!--c-input-->
-					</div><!--f-col2-->
-					<div class="f-col f-col2"></div><!--f-col2-->
-				</div><!--f-row-->
+						<div class="f-row-separator"></div><!--f-row-separator-->
 
-				<div class="f-row-separator"></div><!--f-row-separator-->
+						<div class="f-row">
+							<div class="f-col-multiple">
+								<div class="c-input c-buttons">
+									<button class="btnOk">Aceptar</button>
+								</div>
+							</div><!--f-col-multiple-->
+						</div><!--f-row-->
 
-				<div class="f-row">
-					<div class="f-col-multiple">
-						<div class="c-input c-buttons">
-							<button class="btnCancel">Iniciar Sesión</button>
-							<button class="btnOk">Aceptar</button>
-						</div>
-					</div><!--f-col-multiple-->
-				</div><!--f-row-->
+					</div><!--form-container-inner-->
 
-			</div><!--form-container-inner-->
-
-			<div class="form-shadow"></div><!--form-shadow-->
-		</div><!--form-container-->
+					<div class="form-shadow"></div><!--form-shadow-->
+				</div><!--form-container-->
+			</div><!--c-col1-->
+			<div class="c-col2">
+				<img src="images/subscription/col-right.png" alt="">
+			</div><!--c-col2-->
+		</div><!--c-subscription-inner-->
 		
-	</div><!--container-account-->
+	</div><!--container-subscription-->
 
 	<footer>
 		<img src="images/index/fast-work.png" alt="">
