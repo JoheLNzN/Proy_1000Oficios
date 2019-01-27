@@ -236,40 +236,23 @@ div.c-col2 {
           text-decoration: underline; }
       div.c-col2 div.form-container div.c-input.c-input:last-child {
         margin-bottom: 0px; }
-      div.c-col2 div.form-container div.c-input.c-input-cc, div.c-col2 div.form-container div.c-input.c-input-is {
+      div.c-col2 div.form-container div.c-input.c-input-cc {
         position: relative;
         display: block;
         margin-top: 15px;
         text-align: center !important; }
-        div.c-col2 div.form-container div.c-input.c-input-cc a, div.c-col2 div.form-container div.c-input.c-input-is a {
+        @media all and (max-width: 550px) {
+          div.c-col2 div.form-container div.c-input.c-input-cc {
+            padding-bottom: 10px; } }
+        div.c-col2 div.form-container div.c-input.c-input-cc a {
           position: relative !important;
           display: inline-block;
-          font-weight: bold;
           font-family: "Open Sans";
           font-size: 13px;
+          font-weight: bold;
           color: #0366d6; }
-          div.c-col2 div.form-container div.c-input.c-input-cc a:before, div.c-col2 div.form-container div.c-input.c-input-cc a:after, div.c-col2 div.form-container div.c-input.c-input-is a:before, div.c-col2 div.form-container div.c-input.c-input-is a:after {
-            position: absolute;
-            display: block;
-            opacity: 0;
-            -webkit-transition: all .3s ease-in-out;
-            -o-transition: all .3s ease-in-out;
-            transition: all .3s ease-in-out;
-            font-size: 16px;
-            font-size: lighter;
-            top: -3px; }
-          div.c-col2 div.form-container div.c-input.c-input-cc a:before, div.c-col2 div.form-container div.c-input.c-input-is a:before {
-            content: '[';
-            left: 10px; }
-          div.c-col2 div.form-container div.c-input.c-input-cc a:after, div.c-col2 div.form-container div.c-input.c-input-is a:after {
-            content: ']';
-            right: 10px; }
-          div.c-col2 div.form-container div.c-input.c-input-cc a:hover:before, div.c-col2 div.form-container div.c-input.c-input-is a:hover:before {
-            left: -15px;
-            opacity: 1; }
-          div.c-col2 div.form-container div.c-input.c-input-cc a:hover:after, div.c-col2 div.form-container div.c-input.c-input-is a:hover:after {
-            right: -15px;
-            opacity: 1; }
+        div.c-col2 div.form-container div.c-input.c-input-cc span {
+          color: #DDD; }
       @media all and (max-width: 550px) {
         div.c-col2 div.form-container div.c-input.c-input-password {
           margin-bottom: 10px; } }

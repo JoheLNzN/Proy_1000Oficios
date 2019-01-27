@@ -284,54 +284,31 @@ div.c-col2{
 	  			margin-bottom: 0px;
 	  		}
 
-	  		&.c-input-cc,
-	  		&.c-input-is{
+	  		&.c-input-cc{
 	  			position: relative;
 	  			display: block;
 	  			margin-top: 15px;
 	  			text-align: center !important;
 
+	  			@media all and (max-width: 550px){
+	  				padding-bottom: 10px;
+	  			}
+
 	  			a{
 	  				position: relative !important;
 	  				display: inline-block;
-	  				font-weight: bold;
 	  				font-family: $f_OS;
 	  				font-size: 13px;
+	  				font-weight: bold;
 	  				color: $color_focus;
 
-	  				&:before,
-	  				&:after{
-	  					position: absolute;
-	  					display: block;
-	  					opacity: 0;
-	  					transition: all .3s ease-in-out;
-	  					font-size: 16px;
-	  					font-size: lighter;
-	  					top: -3px;
-	  				}
-
-	  				&:before{
-	  					content: '[';
-	  					left: 10px;
-	  				}
-
-	  				&:after{
-	  					content: ']';
-	  					right: 10px;
-	  				}
-
 	  				&:hover{
-
-	  					&:before{
-	  						left: -15px;
-	  						opacity: 1;
-	  					}
 	  					
-	  					&:after{
-	  						right: -15px;
-	  						opacity: 1;
-	  					}
 	  				}
+	  			}
+
+	  			span{
+	  				color: #DDD;
 	  			}
 	  		}
 
