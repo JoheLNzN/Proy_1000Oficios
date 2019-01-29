@@ -19,35 +19,40 @@
 			<div class="c-svg"></div><!--c-svg-->
 
 			<div class="form-container">
-				<img class="logo-inside" src="images/common/logo.png" alt="">
 
-				<div class="c-input">
-					<label for="txtEmail">Correo electrónico</label>
-					<input type="email" id="txtEmail" class="input" maxlength="50" />
-				</div><!--c-input-->
+				<form action="">
+					<img class="logo-inside" src="images/common/logo.png" alt="">
 
-				<div class="c-input c-input-password">
-					<label for="txtPassword">Contraseña</label>
-					<div class="c-link">
-						<a href="#" class="link-fp">¿Olvidaste tu contraseña?</a>
-					</div><!--c-link-->
-					<input type="password" id="txtPassword" class="input" maxlength="8" />
-				</div><!--c-input-->
+					<div class="c-input">
+						<label for="txtEmail">Correo electrónico</label>
+						<input type="email" id="txtEmail" class="input" maxlength="50" />
+						<span class="msg-error">El campo debe contener solo letras y números, por una a ejemplo aaa.</span>
+					</div><!--c-input-->
 
-				<div class="c-input">
-					<button id="btnLogin">Iniciar Sesión</button>
-				</div><!--c-input-->
+					<div class="c-input c-input-password">
+						<label for="txtPassword">Contraseña</label>
+						<div class="c-link">
+							<a href="#" class="link-fp">¿Olvidaste tu contraseña?</a>
+						</div><!--c-link-->
+						<input type="password" id="txtPassword" class="input" maxlength="8" />
+						<span class="msg-error">Debe de ingresar una contraseña.</span>
+					</div><!--c-input-->
 
-				<div class="separador">
-					<span>¿Eres nuevo en 1000 Oficios?</span>
-				</div><!--separador-->
+					<div class="c-input">
+						<button id="btnLogin">Iniciar Sesión</button>
+					</div><!--c-input-->
 
-				<div class="c-input c-input-cc">
-					<a href="register.html">Regístrate</a>
-					<span>|</span>
-					<a href="subscription.html">Suscríbete</a><br>
-				</div><!--c-input-->
-					
+					<div class="separador">
+						<span>¿Eres nuevo en 1000 Oficios?</span>
+					</div><!--separador-->
+
+					<div class="c-input c-input-cc">
+						<a href="register.html">Regístrate</a>
+						<span>|</span>
+						<a href="subscription.html">Suscríbete</a><br>
+					</div><!--c-input-->
+				</form>
+
 			</div><!--form-container-->
 		</div><!--c-col2-->
 	</div><!--container-index-->

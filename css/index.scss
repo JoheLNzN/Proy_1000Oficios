@@ -19,7 +19,8 @@ div.container-index{
 	display: flex;
 	position: absolute;
 	width: 100%;
-	height: 100%;
+	height: auto;
+	min-height: 100%;
 	overflow: hidden;
 
 	background-color: $color_blue;
@@ -33,7 +34,8 @@ div.container-index{
 div.c-col1,
 div.c-col2{
 	width: 50%;
-	height: 100%;
+	height: auto;
+	min-height: 100%;
 }
 
 div.c-col1{
@@ -108,8 +110,8 @@ div.c-col2{
 	}
 
 	div.form-container{
-		position: relative;
 		display: block;
+		position: relative;
 		max-width: 380px;
 		padding: 40px;
 		width: 80%;
@@ -120,13 +122,14 @@ div.c-col2{
 		
 		border-radius: 4px;
 
+		@media all and (max-width: 880px){
+			margin: 0px;
+		}
+
 		@media all and (max-width: 550px){
 			width: 90%;
 			padding: 27px;
-		}
-
-		@media all and (max-width: 880px){
-			margin-top: 0px;
+			margin: 50px auto;
 		}
 
 		img.logo-inside{
@@ -218,7 +221,7 @@ div.c-col2{
   			input[type="email"]{
   				display: block;
   				width: 100%;
-  				padding: 13px 15px;
+  				padding: 10px;
   				border-radius: 3px;
   				border: 1px solid $color_border;
   				background-color: $color_inputbg;
@@ -234,6 +237,19 @@ div.c-col2{
   				@media all and (max-width: 550px){
 					padding: 10px;
 				}
+  			}
+
+  			span.msg-error{
+  				position: relative;
+  				display: block;
+  				font-family: $f_RO;
+  				font-size: 13px;
+  				background-color: #D83436;
+  				color: white;
+  				padding: 10px;
+  				margin-top: 9px;
+  				letter-spacing: .15px;
+  				border-radius: 3px;
   			}
 
   			button{
@@ -266,7 +282,7 @@ div.c-col2{
 	  				text-align: right;
 	  				font-family: $f_OS;
 	  				font-size: 13px;
-	  				color: #e74c3c;
+	  				color: #D83436;
 	  				top: 0;
 	  				right: 0;
 
