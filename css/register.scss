@@ -140,6 +140,23 @@ div.container-account{
 
 				&.f-multiple-errors{
 					margin-bottom: 0 !important;
+
+					@media all and (max-width: 1165px){
+						margin-bottom: 18px !important;
+					}
+				}
+
+				&.f-errors-web{
+
+					@media all and (max-width: 1165px){
+						display: none !important;
+					}
+				}
+
+				&.f-errors-mobile span.msg-error{
+					@media all and (min-width: 1165px){
+						display: none !important;
+					}
 				}
 
 				@media all and (max-width: 1165px){
@@ -151,6 +168,7 @@ div.container-account{
 
 					div.c-input{
 						position: relative;
+						vertical-align: middle;
 
 						&.c-required{
 
@@ -204,8 +222,17 @@ div.container-account{
 						    color: white;
 						    transition: all .3s ease-in;
 
+						    &.btnOk{
+				  				background-color: $color_blue;
+
+			  					&:hover{
+			  						background-color: $color_blueDark;
+			  						color: $color_yellow;
+			  					}
+			  				}
+
 			  				&.btnCancel{
-			  					color: #f16666;
+				  				color: #f16666;
 			  					background-color: white;
 			  					font-weight: bold;
 
@@ -213,16 +240,7 @@ div.container-account{
 			  						color: darken(#f16666, 10);
 			  						text-decoration: underline;
 			  					}
-			  				}
-
-			  				&.btnOk{
-			  					background-color: $color_blue;
-
-			  					&:hover{
-			  						background-color: $color_blueDark;
-			  						color: $color_yellow;
-			  					}
-			  				}
+				  			}
 			  			}
 
 			  			span.msg-error{
