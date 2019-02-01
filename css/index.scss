@@ -242,7 +242,7 @@ div.c-col2{
   			span.msg-error{
   				position: relative;
   				display: block;
-  				font-family: $f_RO;
+  				font-family: $f_RO !important;
   				font-size: 13px;
   				background-color: #D83436;
   				color: white;
@@ -253,6 +253,10 @@ div.c-col2{
 
   				&:not(:empty){
   					padding: 10px;
+  				}
+
+  				span{
+  					font-family: $f_RO !important;
   				}
   			}
 
