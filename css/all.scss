@@ -64,6 +64,55 @@ button{
 	}
 }
 
+/* Loader */
+
+div#c-loader{
+	display: none;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: 9999999;
+    background-color: #2A80B9;
+
+    justify-content: center;
+    align-items: center;
+
+    &:before{
+    	position: absolute;
+    	content: 'Se está procesando su solicitud, espere un momento...';
+    	color: white;
+    	font-weight: bold;
+    	font-family: $f_OS;
+    	font-size: 13px;
+    	width: 100%;
+    	height: auto;
+    	left: 0;
+    	bottom: 20px;
+    	padding: 20px 50px;
+    	text-align: center;
+    	box-sizing: border-box;
+    }
+
+	img{
+		position: absolute;
+	    width: 100%;
+	    top: 0;
+	    left: 0;
+	    right: 0;
+	    bottom: 0;
+	    margin: auto;
+	    max-width: 600px;
+
+	    -webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		-o-user-select: none;
+		user-select: none;
+	}
+}
+
 /* Notificaciones */
 
 div.c-notificacion{
