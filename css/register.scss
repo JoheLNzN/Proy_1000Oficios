@@ -246,7 +246,7 @@ div.container-account{
 			  			span.msg-error{
 			  				position: relative;
 			  				display: block;
-			  				font-family: $f_RO;
+			  				font-family: $f_RO !important;
 			  				font-size: 13px;
 			  				background-color: #D83436;
 			  				color: white;
@@ -257,6 +257,10 @@ div.container-account{
 
 			  				&:not(:empty){
 			  					padding: 10px;
+			  				}
+
+			  				span{
+			  					font-family: $f_RO !important;
 			  				}
 			  			}
 					}

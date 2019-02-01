@@ -27,6 +27,11 @@ $max-width: 1200px;
 	font-family: $f_OS;
 }
 
+body{
+	position: relative;
+	min-height: 100vh;
+}
+
 a{
 	text-decoration: none;
 }
@@ -58,3 +63,48 @@ button{
 		cursor: pointer;
 	}
 }
+
+/* Notificaciones */
+
+div.c-notificacion{
+	position: fixed;
+	right: 15px;
+	bottom: 15px;	
+	width: 380px;
+    padding: 25px 30px 25px 100px;
+    min-height: 50px;
+    line-height: 22px;
+    background: white;
+    right: -600px;
+
+    background-image: url(../images/common/msg-success.svg);
+    background-size: 50px;
+    background-repeat: no-repeat;
+    background-position: 25px center;
+
+    -webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-o-user-select: none;
+	user-select: none;
+
+    z-index: 9999999;
+}
+
+div.notificacion-success{
+	background-color: #FBFFF1;
+	box-shadow: 0px 0px 5px rgba(0, 0, 0, .3);
+	border-left: 8px solid #a7d155;
+}
+
+div.notificacion-success:before {
+  background: #a7d155;
+  border-color: #8fb14f;
+}
+
+div.c-notificacion p{
+	font-size: 13px;
+    color: #666;
+}
+
+/* Fin de notificación */
