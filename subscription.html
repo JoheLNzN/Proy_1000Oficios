@@ -51,6 +51,7 @@
 												<span class="old-price">Antes <i>S/. 365</i></span>
 											</li>
 										</ul>
+										<span class="msg-error">Usuario y/o contraseña incorrectos.</span>
 									</div><!---->
 								</div><!--c-input-->
 							</div><!--f-col1-->
@@ -65,11 +66,12 @@
 								<div class="c-input c-required">
 									<label for="txtCardNumber">Número de Tarjeta</label>
 									<input type="email" id="txtCardNumber" class="input"/>
+									<span class="msg-error">Usuario y/o contraseña incorrectos.</span>
 								</div><!--c-input-->
 							</div><!--f-col1-->
 						</div><!--f-row-->
 
-						<div class="f-row">
+						<div class="f-row  f-multiple-errors f-errors-mobile">
 							<div class="f-col f-col1">
 								<div class="c-input c-required">
 									<label for="cboExpiryMonth">Mes Vencimiento</label>
@@ -79,6 +81,7 @@
 										<option value="2">Febrero</option>
 										<option value="3">Marzo</option>
 									</select>
+									<span class="msg-error">Usuario y/o contraseña incorrectos.</span>
 								</div><!--c-input-->
 							</div><!--f-col2-->
 							<div class="f-col f-col2">
@@ -90,9 +93,20 @@
 										<option value="2030">2030</option>
 										<option value="3000">3000</option>
 										<option value="3500">3500</option>
+										<span class="msg-error">Usuario y/o contraseña incorrectos.</span>
 									</select>
+									<span class="msg-error">Usuario y/o contraseña incorrectos.</span>
 								</div><!--c-input-->
 							</div><!--f-col2-->
+						</div><!--f-row-->
+
+						<div class="f-row f-errors-web">
+							<div class="f-col-multiple">
+								<div class="c-input c-required">
+									<span class="msg-error">La contraseña2 debe.....</span>
+									<span class="msg-error">La confirmación2 debe...</span>
+								</div><!--c-input-->
+							</div><!--f-col1-->
 						</div><!--f-row-->
 
 						<div class="f-row">
@@ -100,6 +114,7 @@
 								<div class="c-input c-required">
 									<label for="txtSecurityCode">Código de Seguridad</label>
 									<input type="email" id="txtSecurityCode" class="input"/>
+									<span class="msg-error">Usuario y/o contraseña incorrectos.</span>
 								</div><!--c-input-->
 							</div><!--f-col1-->
 						</div><!--f-row-->

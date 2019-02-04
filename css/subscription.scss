@@ -153,6 +153,27 @@ div.container-subscription{
 						width: 100%;
 						margin-bottom: 18px;
 
+						&.f-multiple-errors{
+							margin-bottom: 0 !important;
+
+							@media all and (max-width: 1165px){
+								margin-bottom: 18px !important;
+							}
+						}
+
+						&.f-errors-web{
+
+							@media all and (max-width: 1165px){
+								display: none !important;
+							}
+						}
+
+						&.f-errors-mobile span.msg-error{
+							@media all and (min-width: 1165px){
+								display: none !important;
+							}
+						}
+
 						@media all and (max-width: 1165px){
 							flex-wrap: wrap;
 						}
