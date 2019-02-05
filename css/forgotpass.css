@@ -1,0 +1,18 @@
+div.container-forgotpass {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  height: auto;
+  min-height: 100%;
+  overflow: hidden;
+  background-color: #1944A0;
+  background-image: url(../images/common/pattern.png); }
+  @media all and (max-width: 550px) {
+    div.container-forgotpass {
+      background-size: 170px; } }

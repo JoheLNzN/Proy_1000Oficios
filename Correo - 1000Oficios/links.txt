@@ -1,0 +1,3 @@
+captcha : http://i64.tinypic.com/28o6sy.png
+logo: http://i67.tinypic.com/2052zus.png
+pattern: http://i64.tinypic.com/10oldlv.png
