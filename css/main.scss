@@ -22,7 +22,7 @@ div.container-main{
 		position: fixed;
 		width: 100%;
 		height: 70px;
-		background-color: $color_blue;
+		background-color: $color_blueDark;
 
 		div.header-inner{
 			position: relative;
@@ -96,7 +96,7 @@ div.container-main{
 		min-height: 100vh;
 
 		div.c-information{
-			width: 325px;
+			width: 300px;
 			height: auto;
 			background-color: white;
 			box-shadow: 0 1px 2px rgba(0,0,0,0.07);
@@ -106,20 +106,34 @@ div.container-main{
 				border-bottom: 1px solid #eee;
 				padding: 20px 30px;
 
+				span.i-subscription{
+					padding: 3px 8px;
+				    font-size: 11px;
+				    font-weight: bold;
+				    text-transform: uppercase;
+				    color: #fff;
+				    background: #BBB;
+				    border-radius: 3px;
+
+				    &.hasSubscription{
+				    	background-color: #FFCE00 !important;
+				    }
+				}
+
 				img.i-photo{
 					margin: 20px auto 0px;
 					display: block;
-					width: 150px;
-					height: 150px;
-					border-radius: 150px;
+					width: 80px;
+					height: 80px;
+					border-radius: 80px;
 				}
 
 				span.i-name{
 					display: block;
-				    font-size: 18px;
+				    font-size: 21px;
 				    font-weight: bold;
 				    color: $color_focus;
-				    font-family: $f_OS;
+				    font-family: $f_RO;
 				    text-align: center;
 				    margin-top: 10px;
 				}
@@ -140,18 +154,154 @@ div.container-main{
 				    word-wrap: break-word;
 				    font-family: $f_OS;
 				    font-size: 13px;
-				    color: #414040;
+				    color: #545454;
 				}
 
+				div.c-buttons{
+					text-align: center;
+
+					a{
+						position: relative;
+						display: inline-block;
+					    padding: 8px 15px;
+					    font-family: $f_RO;
+					    font-size: 13px;
+					    font-weight: bold;
+					    line-height: 17px;
+					    letter-spacing: .7px;
+					    border: none;
+					    border-radius: 4px;
+					    appearance: none;
+					    color: white;
+
+					    &.btn1{
+					    	background: $color_focus;
+					    }
+
+					    &.btn2{
+					    	background-color: #ddd;
+					    	color: #666;
+					    }
+					}
+				}
+
+				h3{
+					display: block;
+					margin: 0 0 10px 0;
+				    font-size: 14px;
+				    font-weight: bold;
+				    letter-spacing: .02em;
+				    text-transform: uppercase;
+				    color: #777;
+				    font-family: $f_RO;
+				    margin-bottom: 20px;
+				}
+
+				ul.i-skills{
+					width: 100%;
+					text-align: center;
+					list-style: none;
+
+					li{
+						display: inline-block;
+					    padding: 6px 8px;
+					    border: 1px solid #ddd;
+					    color: #444;
+					    font-family: $f_RO;
+					    border-radius: 4px;
+					    font-size: 13px;
+					    letter-spacing: .5px;
+					}
+				}
 			}
 		}
 
 		div.c-services{
-			width: calc(100% - 325px);
+			width: calc(100% - 300px);
 			height: auto;
 			min-height: 100%;
-			background-color: yellow;
 			padding: 0px 30px;
+
+			div.service{
+				display: -webkit-flex;
+				display: -moz-flex;
+				display: -ms-flex;
+				display: -o-flex;
+				display: flex;
+				width: 100%;
+				height: auto;
+				background-color: white;
+				border-radius: 6px;
+				overflow: hidden;
+				box-shadow: 2px 2px 0 rgba(0,0,0,0.1);
+				border: 1px solid #ddd;
+				margin-bottom: 10px;
+
+				div.cs-col1{
+					display: -webkit-flex;
+					display: -moz-flex;
+					display: -ms-flex;
+					display: -o-flex;
+					display: flex;
+					width: 200px;
+					height: auto;
+					background-color: $color_blueDark;
+
+					justify-content: center;
+					align-items: center;
+					background-image: url(../images/common/pattern.png);
+					background-size: 160px;
+
+					img{
+						width: 110px;
+						border-radius: 110px;
+					}
+				}
+
+				div.cs-col2{
+					width: calc(100% - 200px);
+					padding: 20px;
+
+					span.sa-title{
+						display: block;
+						font-size: 25px;
+						font-family: $f_RO;
+						color: $color_focus;
+						font-weight: bold;
+						padding-bottom: 6px;
+					}
+
+					span.sa-worker{
+						font-size: 14px;
+						color: #7f7f7f;
+						font-family: $f_RO;
+						color: $color_focus;
+					}
+
+					span.sa-location{
+						font-family: $f_RO;
+						font-size: 14px;
+						color: #7f7f7f;
+					}
+
+					p{
+						display: block;
+						font-size: 13px;
+						line-height: 21px;
+						color: #545454;
+						padding: 8px 0px;
+						font-family: $f_OS;
+					}
+
+					span.sa-time{
+						display: block;
+						text-align: right;
+						font-size: 13px;
+					    color: #7f7f7f;
+					    font-family: $f_RO;
+					}
+				}
+			}
 		}
 	}
 }
