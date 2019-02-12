@@ -14,18 +14,31 @@
 
 		<header>
 			<div class="header-inner">
-				<img class="logo" src="images/common/logo_no_border.png" alt="">
+				<img class="logo" src="images/common/logo_no_border_inline.png" alt="">
 
-				<nav>
-					<a href=""><b>Ser</b>vicios</a>
-					<a href=""><b>Per</b>fil</a>
-					<a href=""><b>Sus</b>cripción</a>
+				<nav class="nav-left">
+					<a class="active" href="">Servicios</a>
+					<a href="">Perfil</a>
+					<a href="">Suscripción</a>
+				</nav>
+
+				<nav class="nav-right">
+					<a href="">Salir</a>
 				</nav>
 			</div><!--header-inner-->
 		</header>
 
 		<div class="c-summary">
-			
+			<ul>
+				<li>
+					<span class="s-title">Publicaciones</span>
+					<span class="s-value">5</span>
+				</li>
+				<li>
+					<span class="s-title">Publicaciones</span>
+					<span class="s-value">5</span>
+				</li>
+			</ul>
 		</div><!--c-summary-->
 
 		<div class="c-content">
@@ -33,7 +46,7 @@
 			<div class="c-information">
 				<div class="c-bloque">
 					<span class="i-subscription hasSubscription">Premiun</span>
-					<img class="i-photo" src="images/main/avatar.jpg" alt="">
+					<img class="i-photo" src="images/main/avatar_default.png" alt="">
 					<span class="i-name">Joel C. Naupa Crispín</span>
 					<span class="i-from">Lima, Perú</span>
 					<p>Microsoft MVP | Software Developer - Analyst - Designer</p>
@@ -44,7 +57,7 @@
 				</div><!--c-bloque-->
 
 				<div class="c-bloque">
-					<h3>Mis Servicios</h3>
+					<h3><span class="icon-s-services"></span>Mis Servicios</h3>
 					<ul class="i-skills">
 						<li>Gasfitero</li>
 						<li>Mecánico</li>
@@ -52,50 +65,133 @@
 					</ul>
 				</div><!--c-bloque-->
 
+				<div class="c-bloque">
+					<h3><span class="icon-s-search"></span>Filtros</h3>
+					<div class="form-container">
+
+						<div class="form-container-inner">
+
+							<div class="f-row">
+								<div class="f-col f-col1">
+									<div class="c-input">
+										<label for="cboTypeService">Palabra Clave</label>
+										<input type="text" name="" id="" class="input">
+									</div><!--c-input-->
+								</div><!--f-col2-->
+							</div><!--f-row-->
+
+							<div class="f-row">
+								<div class="f-col f-col1">
+									<div class="c-input">
+										<label for="cboTypeService">Tipo de Servicio</label>
+										<select name="" id="cboTypeService" class="input">
+											<option value="">-- Seleccione --</option>
+											<option value="">Trabajador</option>
+											<option value="">Diseñador</option>
+										</select>
+									</div><!--c-input-->
+								</div><!--f-col2-->
+								<div class="f-col f-col2">
+									<div class="c-input">
+										<label for="cboDistrito">Distrito</label>
+										<select name="" id="cboDistrito" class="input">
+											<option value="">-- Seleccione --</option>
+											<option value="">La Victoria</option>
+											<option value="">San Isidro</option>
+										</select>
+									</div><!--c-input-->
+								</div><!--f-col2-->
+
+							</div><!--f-row-->
+
+							<div class="f-row f-multiple-errors">
+								<div class="f-col f-col1">
+									<div class="c-input">
+										<label for="cboTypeService">Fecha publicación : Inicio</label>
+										<select name="" id="cboTypeService" class="input">
+											<option value="">-- Seleccione --</option>
+											<option value="">Trabajador</option>
+											<option value="">Diseñador</option>
+										</select>
+									</div><!--c-input-->
+								</div><!--f-col2-->
+								<div class="f-col f-col2">
+									<div class="c-input">
+										<label for="cboDistrito">Fecha publicación : Fin</label>
+										<select name="" id="cboDistrito" class="input">
+											<option value="">-- Seleccione --</option>
+											<option value="">La Victoria</option>
+											<option value="">San Isidro</option>
+										</select>
+									</div><!--c-input-->
+								</div><!--f-col2-->
+
+							</div><!--f-row-->
+
+							<div class="c-buttons left">
+								<a href="#" class="btn2">Limpiar</a>
+								<a href="#" class="btn1">Buscar</a>
+							</div><!--c-buttons-->
+
+						</div><!--form-container-inner-->
+
+					</div><!--form-container-->
+				</div><!--c-bloque-->
+
 			</div><!--c-information-->
 
 			<div class="c-services">
 
-				<div class="service">
-					<div class="cs-col1">
-						<img src="images/services/users/user1.jpg" alt="">
-					</div><!--cs-col1-->
-					<div class="cs-col2">
-						<span class="sa-title">Programador Full-Stack</span>
-						<span class="sa-worker">Joel C. Naupa Crispín</span>
-						<span class="sa-location">(Lima - La Victoria)</span>
-						<p>Somos una empresa del valle arrocero de Lambayeque una de las pioneras en la producción y comercialización de arroz en todo el Perú estamos en búsqueda del mejor talento para el puesto de Impulsadora Degustadora....</p>
-						<span class="sa-time">Hoy, 04:52 pm</span>
-					</div><!--cs-col2-->
-				</div><!--service-->
+				<div class="c-services-inner">
 
+					<div class="service">
+						<div class="cs-col1">
+							<img src="images/services/users/user1.jpg" alt="">
+							<div class="s-info-anuncio">
+								<button>Ver Anuncio</button>
+							</div><!--s-info-anuncio-->
+						</div><!--cs-col1-->
+						<div class="cs-col2">
+							<span class="sa-title">Programador Full-Stack</span>
+							<span class="sa-worker">Joel C. Naupa Crispín</span>
+							<span class="sa-location">(Lima - La Victoria)</span>
+							<p>Somos una empresa del valle arrocero de Lambayeque una de las pioneras en la producción y comercialización de arroz en todo el Perú estamos en búsqueda del mejor talento para el puesto de Impulsadora Degustadora....</p>
+							<span class="sa-time" title="Fecha de publicación">Hoy, 04:52 pm</span>
+						</div><!--cs-col2-->
+					</div><!--service-->
 
-				<div class="service">
-					<div class="cs-col1">
-						<img src="images/services/users/user1.jpg" alt="">
-					</div><!--cs-col1-->
-					<div class="cs-col2">
-						<span class="sa-title">Programador Full-Stack</span>
-						<span class="sa-worker">Joel C. Naupa Crispín</span>
-						<span class="sa-location">(Lima - La Victoria)</span>
-						<p>Somos una empresa del valle arrocero de Lambayeque una de las pioneras en la producción y comercialización de arroz en todo el Perú estamos en búsqueda del mejor talento para el puesto de Impulsadora Degustadora....</p>
-						<span class="sa-time">Hoy, 04:52 pm</span>
-					</div><!--cs-col2-->
-				</div><!--service-->
+					<div class="service">
+						<div class="cs-col1">
+							<img src="images/services/users/user2.jpg" alt="">
+							<div class="s-info-anuncio">
+								<button>Ver Anuncio</button>
+							</div><!--s-info-anuncio-->
+						</div><!--cs-col1-->
+						<div class="cs-col2">
+							<span class="sa-title">Mecánico 24 Horas</span>
+							<span class="sa-worker">Joel C. Naupa Crispín</span>
+							<span class="sa-location">(Lima - La Victoria)</span>
+							<p>Somos una empresa del valle arrocero de Lambayeque una de las pioneras en la producción y comercialización de arroz en todo el Perú estamos en búsqueda del mejor talento para el puesto de Impulsadora Degustadora....</p>
+							<span class="sa-time" title="Fecha de publicación">Hoy, 04:52 pm</span>
+						</div><!--cs-col2-->
+					</div><!--service-->
 
-
-				<div class="service">
-					<div class="cs-col1">
-						<img src="images/services/users/user1.jpg" alt="">
-					</div><!--cs-col1-->
-					<div class="cs-col2">
-						<span class="sa-title">Programador Full-Stack</span>
-						<span class="sa-worker">Joel C. Naupa Crispín</span>
-						<span class="sa-location">(Lima - La Victoria)</span>
-						<p>Somos una empresa del valle arrocero de Lambayeque una de las pioneras en la producción y comercialización de arroz en todo el Perú estamos en búsqueda del mejor talento para el puesto de Impulsadora Degustadora....</p>
-						<span class="sa-time">Hoy, 04:52 pm</span>
-					</div><!--cs-col2-->
-				</div><!--service-->
+					<div class="service">
+						<div class="cs-col1">
+							<img src="images/services/users/user3.jpg" alt="">
+							<div class="s-info-anuncio">
+								<button>Ver Anuncio</button>
+							</div><!--s-info-anuncio-->
+						</div><!--cs-col1-->
+						<div class="cs-col2">
+							<span class="sa-title">Jardinero con Experiencia</span>
+							<span class="sa-worker">Joel C. Naupa Crispín</span>
+							<span class="sa-location">(Lima - La Victoria)</span>
+							<p>Somos una empresa del valle arrocero de Lambayeque una de las pioneras en la producción y comercialización de arroz en todo el Perú estamos en búsqueda del mejor talento para el puesto de Impulsadora Degustadora....</p>
+							<span class="sa-time" title="Fecha de publicación">Hoy, 04:52 pm</span>
+						</div><!--cs-col2-->
+					</div><!--service-->
+				</div><!--c-services-inner-->
 				
 			</div><!--c-services-->
 		</div><!--c-information-->
