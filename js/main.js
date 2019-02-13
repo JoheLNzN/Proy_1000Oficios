@@ -7,6 +7,15 @@ $('a#btnPulishService').on("click", function (e) {
     $modal.find('div.form-container').addClass('show');
 });
 
+$('a#gotoSubscription').on("click", function (e) {
+    e.preventDefault();
+    
+    var $modal = $('div#c-modal-subscription');
+    $modal.fadeIn('slow');
+    $modal.find('div.form-container').addClass('show');
+});
+
+
 $('button.btnCancel').on("click", function (e) {
     e.preventDefault();
     var $modal = $(this).closest('.c-modal');

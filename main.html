@@ -18,8 +18,7 @@
 
 				<nav class="nav-left">
 					<a class="active" href="">Servicios</a>
-					<a href="">Perfil</a>
-					<a href="">Suscripción</a>
+					<a id="gotoSubscription">Suscripción</a>
 				</nav>
 
 				<nav class="nav-right">
@@ -364,8 +363,117 @@
 				<img class="form-shadow" src="images/common/shadow_modal.png" alt="">
 
 			</div><!--form-container-->
+		</div><!--c-modal-inner-->
+	</div><!--c-modal-->
 
+	<div id="c-modal-subscription" class="c-modal">
+		<div class="c-modal-inner">
+			<div class="form-container">
+				<div class="form-container-inner">
+					<div class="f-row">
+						<div class="f-col-multiple">
+							<div class="c-input c-required">
+								<label>Tipo de Plan</label>
+								<div class="c-plan">
+									<ul class="list-plans">
+										<li>
+											<span class="type-plan">1 Mes</span>
+											<span class="current-price">S/. 30</span>
+											<span class="old-price">Antes <i>S/. 30</i></span>
+										</li>
+										<li>
+											<span class="type-plan">3 Meses</span>
+											<span class="current-price">S/. 72</span>
+											<span class="old-price">Antes <i>S/. 90</i></span>
+										</li>
+										<li>
+											<span class="type-plan">6 Meses</span>
+											<span class="current-price">S/. 108</span>
+											<span class="old-price">Antes <i>S/. 180</i></span>
+										</li>
+										<li>
+											<span class="type-plan">1 Año</span>
+											<span class="current-price">S/. 201</span>
+											<span class="old-price">Antes <i>S/. 365</i></span>
+										</li>
+									</ul>
+									<span class="msg-error">Usuario y/o contraseña incorrectos.</span>
+								</div><!---->
+							</div><!--c-input-->
+						</div><!--f-col1-->
+					</div><!--f-row-->
 
+					<div class="f-row  f-multiple-errors">
+						<div class="f-col f-col1">
+							<div class="c-input c-required">
+								<label for="cboExpiryMonth">Número de Tarjeta</label>
+								<select name="" id="cboExpiryMonth" class="input">
+									<option value="">-- Seleccione --</option>
+									<option value="1">Enero</option>
+									<option value="2">Febrero</option>
+									<option value="3">Marzo</option>
+								</select>
+								<span class="msg-error">Usuario y/o contraseña incorrectos.</span>
+							</div><!--c-input-->
+						</div><!--f-col2-->
+						<div class="f-col f-col2">
+							<div class="c-input c-required">
+								<label for="txtExpiryYear">Código de Seguridad</label>
+								<!-- <input type="text" id="txtExpiryYear" class="input"/> -->
+								<select name="" id="cboExpiryMonth" class="input">
+									<option value="">-- Seleccione --</option>
+									<option value="2030">2030</option>
+									<option value="3000">3000</option>
+									<option value="3500">3500</option>
+									<span class="msg-error">Usuario y/o contraseña incorrectos.</span>
+								</select>
+								<span class="msg-error">Usuario y/o contraseña incorrectos.</span>
+							</div><!--c-input-->
+						</div><!--f-col2-->
+					</div><!--f-row-->
+
+					<div class="f-row  f-multiple-errors">
+						<div class="f-col f-col1">
+							<div class="c-input c-required">
+								<label for="cboExpiryMonth">Mes Vencimiento</label>
+								<select name="" id="cboExpiryMonth" class="input">
+									<option value="">-- Seleccione --</option>
+									<option value="1">Enero</option>
+									<option value="2">Febrero</option>
+									<option value="3">Marzo</option>
+								</select>
+								<span class="msg-error">Usuario y/o contraseña incorrectos.</span>
+							</div><!--c-input-->
+						</div><!--f-col2-->
+						<div class="f-col f-col2">
+							<div class="c-input c-required">
+								<label for="txtExpiryYear">Año Vencimiento</label>
+								<!-- <input type="text" id="txtExpiryYear" class="input"/> -->
+								<select name="" id="cboExpiryMonth" class="input">
+									<option value="">-- Seleccione --</option>
+									<option value="2030">2030</option>
+									<option value="3000">3000</option>
+									<option value="3500">3500</option>
+									<span class="msg-error">Usuario y/o contraseña incorrectos.</span>
+								</select>
+								<span class="msg-error">Usuario y/o contraseña incorrectos.</span>
+							</div><!--c-input-->
+						</div><!--f-col2-->
+					</div><!--f-row-->
+
+					<div class="f-row f-row-buttons">
+						<div class="f-col-multiple">
+							<div class="c-input c-buttons">
+								<button class="btnCancel">Cancel</button>
+								<button class="btnOk">Aceptar</button>
+							</div>
+						</div><!--f-col-multiple-->
+					</div><!--f-row-->
+
+				</div><!--form-container-inner-->
+
+				<img class="form-shadow" src="images/common/shadow_modal.png" alt="">
+			</div><!--form-container-->
 		</div><!--c-modal-inner-->
 	</div><!--c-modal-->
 
