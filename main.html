@@ -52,7 +52,7 @@
 					<p>Microsoft MVP | Software Developer - Analyst - Designer</p>
 					<div class="c-buttons">
 						<a href="#" class="btn1">Editar Perfil</a>
-						<a href="#" class="btn2">Perfil</a>
+						<a id="btnPulishService" class="btn2">Publicar Servicio</a>
 					</div><!--c-buttons-->
 				</div><!--c-bloque-->
 
@@ -197,5 +197,81 @@
 		</div><!--c-information-->
 		
 	</div><!--container-main-->	
+
+
+	<div id="c-modal-create-service" class="c-modal">
+		<div class="c-modal-inner">
+			
+			<div class="form-container">
+
+				<div class="form-container-inner">
+
+					<div class="f-row f-multiple-errors">
+						
+						<div class="f-col f-col1">
+							<div class="c-input c-required">
+								<label for="txtPassword">Título</label>
+								<input type="password" id="txtPassword" class="input" maxlength="8" />
+								<span class="msg-error">La contraseña debe tener 10 caracteres como máximo.</span>
+							</div><!--c-input-->
+						</div><!--f-col2-->
+						<div class="f-col f-col2">
+							<div class="c-input c-required">
+								<label for="txtConfirmPassword">Servicio</label>
+								<input type="password" id="txtConfirmPassword" class="input" maxlength="8" />
+								<span class="msg-error">La confirmaciomn debe tener 10 caracteres como máximo.</span>
+							</div><!--c-input-->
+						</div><!--f-col2-->
+
+					</div><!--f-row-->
+
+					<div class="f-row">
+						<div class="f-col-multiple">
+							<div class="c-input c-required">
+								<label for="txtName">Descripción</label>
+								<textarea name="txtDescription" cols="40" rows="5" class="input"></textarea>
+							</div><!--c-input-->
+						</div><!--f-col1-->
+					</div><!--f-row-->
+
+					<div class="f-row f-multiple-errors">
+						<div class="f-col f-col1">
+							<div class="c-input c-required">
+								<label for="txtLastnameP">Distrito</label>
+								<input type="text" id="txtLastnameP" class="input" maxlength="20" />
+								<span class="msg-error">La contraseña debe tener 10 caracteres como máximo.</span>
+							</div><!--c-input-->
+						</div><!--f-col2-->
+						<div class="f-col f-col2">
+							<div class="c-input c-required">
+								<label for="txtLastnameM">Foto</label>
+								<input type="text" id="txtLastnameM" class="input" maxlength="20" />
+								<span class="msg-error">El apellidp M;aa--</span>
+							</div><!--c-input-->
+						</div><!--f-col2-->
+					</div><!--f-row-->
+
+					<div class="f-row-separator"></div><!--f-row-separator-->
+
+					<div class="f-row">
+						<div class="f-col-multiple">
+							<div class="c-input c-buttons">
+								<button class="btnCancel">Cancelar</button>
+								<button class="btnOk">Publicar</button>
+							</div>
+						</div><!--f-col-multiple-->
+					</div><!--f-row-->
+
+				</div><!--form-container-inner-->
+
+				<div class="form-shadow"></div><!--form-shadow-->
+			</div><!--form-container-->
+
+
+		</div><!--c-modal-inner-->
+	</div><!--c-modal-->
+
+    <script src="js/libraries/jquery-3.3.1.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>
