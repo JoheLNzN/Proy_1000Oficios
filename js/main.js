@@ -13,3 +13,24 @@ $('button.btnCancel').on("click", function (e) {
     $modal.find('div.form-container').removeClass('show');
     $modal.fadeOut(1100);
 });
+
+/* Contar publicaciones */
+
+function countPublications(){
+
+	var $name =  $('div.c-information span.i-name').text();
+	var $total = $('div.service').length;
+
+	var $publications = 0;
+
+	$('div.c-services span.sa-worker').each(function(i, item){
+		if($(this).text() == $name)
+			$publications ++;
+	});
+
+	$('span.s-value-publication-mio').text($publications);
+	$('span.s-value-publication-total').text($total);
+
+}
+
+countPublications();
