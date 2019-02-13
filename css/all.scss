@@ -158,9 +158,11 @@ div.c-notificacion p{
 
 /* Fin de notificación */
 
-div.c-modal{
+div#c-modal-create-service{
 	display: none;
 	position: fixed;
+	left: 0;
+	top: 0;
 	width: 100%;
 	height: 100%;
 	background-color: rgba(0, 46, 139, 0.8);

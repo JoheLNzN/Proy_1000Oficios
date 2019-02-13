@@ -238,6 +238,10 @@ div.container-main{
 
 					    transition: all .3s ease;
 
+					    &:hover{
+					    	cursor: pointer;
+					    }
+
 					    &.btn1{
 					    	background-color: $color_focus;
 
@@ -250,6 +254,11 @@ div.container-main{
 					    	background-color: rgb(253,253,253);
 					    	color: #666;
 					    	border: 1px solid rgb(220,220,220);
+
+					    	&:hover{
+					    		border: 1px solid $color_focus;
+					    		color: $color_focus;
+					    	}
 					    }
 					}
 
