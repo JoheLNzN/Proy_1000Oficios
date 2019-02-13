@@ -432,7 +432,7 @@
 						</div><!--f-col2-->
 					</div><!--f-row-->
 
-					<div class="f-row  f-multiple-errors">
+					<div class="f-row f-multiple-errors">
 						<div class="f-col f-col1">
 							<div class="c-input c-required">
 								<label for="cboExpiryMonth">Mes Vencimiento</label>
@@ -461,13 +461,23 @@
 						</div><!--f-col2-->
 					</div><!--f-row-->
 
-					<div class="f-row f-row-buttons">
-						<div class="f-col-multiple">
-							<div class="c-input c-buttons">
-								<button class="btnCancel">Cancel</button>
-								<button class="btnOk">Aceptar</button>
-							</div>
-						</div><!--f-col-multiple-->
+					<div class="f-row f-multiple-errors f-lastrow">
+						<div class="f-col f-col1">
+							<div class="c-input c-required">
+								<label for="cboExpiryMonth">CCV</label>
+								<select name="" id="cboExpiryMonth" class="input">
+									<option value="">-- Seleccione --</option>
+									<option value="1">Enero</option>
+									<option value="2">Febrero</option>
+									<option value="3">Marzo</option>
+								</select>
+								<span class="msg-error">Usuario y/o contraseña incorrectos.</span>
+							</div><!--c-input-->
+						</div><!--f-col2-->
+						<div class="f-col f-col2 f-buttons">
+							<button class="btnCancel">Cancel</button>
+							<button class="btnOk">Aceptar</button>
+						</div><!--f-col2-->
 					</div><!--f-row-->
 
 				</div><!--form-container-inner-->

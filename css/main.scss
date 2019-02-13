@@ -1053,6 +1053,7 @@ div#c-modal-subscription{
 			}
 
 			div.f-row{
+				position: relative;
 				display: -webkit-flex;
 				display: -moz-flex;
 				display: -ms-flex;
@@ -1061,6 +1062,10 @@ div#c-modal-subscription{
 				width: 100%;
 				margin-bottom: 18px;
 				z-index: 9;
+
+				&.f-lastrow{
+					margin-bottom: 0 !important;
+				}
 
 				&.f-row-buttons{
 					margin-bottom: 0 !important;
@@ -1250,24 +1255,19 @@ div#c-modal-subscription{
 			  						}
 
 			  						span.type-plan{
-			  							padding: 15px;
+			  							padding: 5px;
 			  							background-color: #d0dce6;
 			  							color: #222;
-			  							font-size: 24px;
+			  							font-size: 15px;
 			  							font-weight: bold;
 			  							letter-spacing: -0.5px;
-			  							margin-bottom: 5px;
-
-			  							@media all and (max-width: 550px){
-			  								font-size: 21px;
-			  							}
 			  						}
 
 			  						span.old-price{
 			  							color: #afc3d4;
-			  							font-size: 14px;
+			  							font-size: 12px;
 			  							padding-top: 2px;
-			  							padding-bottom: 15px;
+			  							padding-bottom: 5px;
 
 			  							@media all and (max-width: 550px){
 			  								font-size: 13px;
@@ -1276,15 +1276,14 @@ div#c-modal-subscription{
 			  							i{
 			  								font-family: $f_RO;
 			  								font-style: normal;
-			  								font-size: 14px;
+			  								font-size: 12px;
 			  								text-decoration: line-through;
 			  							}
-
 			  						}
 
 			  						span.current-price{
-			  							padding-top: 10px;
-			  							font-size: 25px;
+			  							padding-top: 5px;
+			  							font-size: 15px;
 			  							font-weight: lighter;
 
 			  							@media all and (max-width: 550px){
@@ -1302,10 +1301,52 @@ div#c-modal-subscription{
 				}
 
 				div.f-col{
+					position: relative;
 					width: 50%;
 
 					@media all and (max-width: 1165px){
 						width: 100%;
+					}
+
+					&.f-buttons{
+						position: absolute;
+						right: 0;
+						text-align: right;
+						bottom: 0;
+
+						button{
+			  				position: relative;
+			  				display: inline-block;
+						    overflow: hidden;
+						    padding: 9px 15px;
+						    font-size: 13px;
+						    font-weight: 400;
+						    text-align: center;
+						    border: 1px solid transparent;
+						    border-radius: 4px;
+						    color: white;
+						    transition: all .3s ease-in;
+
+						    &.btnOk{
+				  				background-color: $color_blue;
+
+			  					&:hover{
+			  						background-color: $color_blueDark;
+			  						color: $color_yellow;
+			  					}
+			  				}
+
+			  				&.btnCancel{
+				  				color: #f16666;
+			  					background-color: white;
+			  					font-weight: bold;
+
+			  					&:hover{
+			  						color: darken(#f16666, 10);
+			  						text-decoration: underline;
+			  					}
+				  			}
+			  			}
 					}
 
 					div.c-input{
