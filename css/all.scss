@@ -419,6 +419,10 @@ div.c-modal{
 			  				letter-spacing: .15px;
 			  				border-radius: 3px;
 
+			  				span{
+			  					font-family: $f_RO !important;
+			  				}
+
 			  				&:not(:empty){
 			  					padding: 10px;
 			  				}
