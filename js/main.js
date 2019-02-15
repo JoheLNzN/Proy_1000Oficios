@@ -43,3 +43,11 @@ function countPublications(){
 }
 
 countPublications();
+
+
+$('a.getService').on('click', function(e){
+     e.preventDefault();
+    
+    var $modal = $('div#viewer');
+    $modal.fadeIn('slow');
+});
