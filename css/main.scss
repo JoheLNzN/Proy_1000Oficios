@@ -1539,7 +1539,7 @@ div.c-service-viewer{
 			}
 
 			div.svh-content{
-				padding: 30px 60px;
+				padding: 30px 60px 0px 60px;
 
 				div.svh-info{
 
@@ -1595,37 +1595,16 @@ div.c-service-viewer{
 					    text-align: left;
 					    font-weight: bold;
 					    color: #3F3F3F;
-					    margin-bottom: 17px;
-					}
-				}
-
-				div.svh-services{
-					padding-top: 18px;
-					border-top: 1px dashed #ccc;
-
-					ul.i-skills{
-						width: 100%;
-						text-align: center;
-						list-style: none;
-
-						li{
-							display: inline-block;
-						    padding: 6px 8px;
-						    border: 1px solid #ddd;
-						    color: #444;
-						    font-family: $f_RO;
-						    border-radius: 4px;
-						    font-size: 13px;
-						    letter-spacing: .5px;
-						    margin-bottom: 4px;
-						}
+					    letter-spacing: -.5px;
+					    padding-bottom: 12px;
+					    border-bottom: 1px dashed #ccc;
 					}
 				}
 			}
 		}
 
 		div.c-service-viewer-content{
-			padding: 30px 60px;
+			padding: 15px 60px 30px 60px;
 
 			h1{
 				display: block;
